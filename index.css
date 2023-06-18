@@ -78,3 +78,30 @@ p {
 .first-letter-spacing::first-letter {
     margin-left: 1em;
 }
+/**600ｐｘ以下***************************/
+@media (max-width: 600px) {
+    p {
+        font-size: x-large;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    li {
+        text-align: center;
+    }
+
+    .item {
+        display: inline-block;
+        margin-bottom: 3%;
+
+    }
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: x-large;
+    }
+}

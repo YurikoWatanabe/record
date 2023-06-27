@@ -4,53 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shizuru&family=Slackside+One&display=swap" rel="stylesheet">
+
     <title>ポートフォリオ</title>
 </head>
 <body>
     <div class="container">
-        <div class="content">
-            <h1>渡部由里子&nbsp;ポートフォリオ</h1>
-            <ul>
-                <li><a href="#section1">学習歴</a></li>
-                <li><a href="#section2">初めての自由課題</a></li>
-                <li><a href="#section3">初めてのチーム開発</a></li>
-                <li><a href="#section4">Laravelでチーム開発</a></li>
-            </ul>
-            <div class="overview">
-                <div class="shadow">
-                    <h2 id="section1">学習歴</h2>
+        <div class="paper">
+            <header class="note">
+                <ul class="header">
+                    <li><a href="#section1">学習歴</a></li>
+                    <li><a href="#section2">初めての自由課題</a></li>
+                    <li><a href="#section3">初めてのチーム開発</a></li>
+                    <li><a href="#section4">Laravelでチーム開発</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="deg">
+                    <div class="stamp-position">
+                        <div class="stamp stamp-approve">
+                            <span>2023.6.26</span>
+                            <span>渡部由里子</span>
+                        </div>
+                    </div>
+                    <div class="sticky">
+                        <h1>ポートフォリオ</h1>
+                    </div>
                 </div>
-                <table border="1">  
-                    <tr>  
-                        <th>学習開始時期</th>
-                        <td>2022年12月から</td>
-                    </tr>
-                    <tr>              
-                    <tr>  
-                        <th>主な学習方法</th>
-                        <td>職業訓練（2022年12月19日から2023年6月16日まで受講）</td>
-                    </tr>
-                    <tr>
-                        <th>学習言語</th>
-                        <td>HTML、CSS、PHP、JavaScript、Laravel</td>
-                    </tr>
-                    <tr>
-                        <th>資格</th>
-                        <td>PHP8技術者認定初級試験（2023年6月 取得）</td>
-                    </tr>                
-                </table>
+                <div class="overview">
+                    <div class="h2-position">
+                        <h2 id="section1">学習歴</h2>
+                    </div>
+                </div>
+                    <table border="1">  
+                        <tr>  
+                            <th>学習開始時期</th>
+                            <td>2022年12月から</td>
+                        </tr>
+                        <tr>              
+                        <tr>  
+                            <th>主な学習方法</th>
+                            <td>職業訓練（2022年12月19日から2023年6月16日まで受講）</td>
+                        </tr>
+                        <tr>
+                            <th>学習言語</th>
+                            <td>HTML、CSS、PHP、JavaScript</td>
+                        </tr>
+                        <tr>
+                            <th>学習フレームワーク</th>
+                            <td>Laravel</td>
+                        </tr>
+                        <tr>
+                            <th>資格</th>
+                            <td>PHP8技術者認定初級試験（2023年6月 取得）</td>
+                        </tr>                
+                    </table>
+                </div>
+                <p class="note first-letter-spacing">
+                    以前からプログラミングに興味があり、プロゲートなどで遊んでみたり。
+                    しかし具体的な学習方法が分からず、敷居の高さを感じておりました。
+                    そんな折、職業訓練でプログラミングを学べることを知り飛びつきました。
+                </p>
             </div>
-            <p class="first-letter-spacing">
-                以前からプログラミングに興味があり、プロゲートなどで遊んでみたり。
-                しかし具体的な学習方法が分からず、敷居の高さを感じておりました。
-                そんな折、職業訓練でプログラミングを学べることを知り飛びつきました。
-            </p>
             <div class="overview">
-                <div class="shadow">
-                    <h2 id="section2">初めての自由課題</h2>
+                <!-- <div class="shadow"> -->
+                    <div class="h2-position">
+                        <h2 id="section2">初めての自由課題</h2>
+                    </div>
+                <!-- </div> -->
+                <div class="first-theme">
+                    <a href="https://yurikowatanabe.github.io/git_test/" target="_blank" rel="noopener noreferrer">
+                        <span class="work-title btn">javaScript学んだことまとめ</span>
+                        <img class="thum" src="img/screenshot 2023-06-26 134003.png" alt="">
+                    </a>
                 </div>
-                <a class="item" href="https://yurikowatanabe.github.io/git_test/" target="_blank" rel="noopener noreferrer">「javaScript学んだことまとめ」へのリンク</a><br>
-                <a class="item" href="https://github.com/YurikoWatanabe/git_test" target="_blank" rel="noopener noreferrer">「javaScript学んだことまとめのリポジトリ」へのリンク</a>
+                <a class="repository btn" href="https://github.com/YurikoWatanabe/git_test" target="_blank" rel="noopener noreferrer">javaScript学んだことまとめ<br>リポジトリ</a>
                 <table border="1">                
                     <tr>
                         <th>タイトル</th>
@@ -79,7 +109,7 @@
                     </tr>
                 </table>
             </div>
-            <p class="first-letter-spacing">
+            <p class="note first-letter-spacing">
                 初めての自由課題として、JavaScriptを使った何かを作ることに。
                 提出期限は5日後。
                 JavaScriptの授業を振り返りたい思いから、「JavaScriptで学んだことまとめサイト」を考えました。
@@ -92,7 +122,7 @@
             </p>
             
             <div class="overview">
-                <div class="shadow">
+                <div class="h2-position">
                     <h2 id="section3">初めてのチーム開発</h2>
                 </div>
                 <a class="item" href="https://bpkuma.github.io/KonnaKanji/" target="_blank" rel="noopener noreferrer">「こんな漢字」へのリンク</a><br>
@@ -125,7 +155,7 @@
                     </tr>              
                 </table>
             </div>
-            <p class="first-letter-spacing">
+            <p class="note first-letter-spacing">
                 クラス内で希望者がいれば、チーム開発の時間に充てても良いという流れになったため希望。
                 4人集まり、GitHubを使って管理していこうという話に。
                 チームメイトの1人が、先の自由課題の際、私以上に壮大な設計をしてしまい、ほとんど進められなかったプロジェクトをチームで
@@ -135,7 +165,7 @@
                 主に見た目に関わる機能（JavaScriptとCSS）を担当。
             </p>
             <div class="overview">
-                <div class="shadow">
+                <div class="h2-position">
                     <h2 id="section4">Laravelでチーム開発</h2>   
                 </div>     
                 <video src="js_review.mp4" width="630" height="360" controls></video>
@@ -175,7 +205,7 @@
                     </tr>          
                 </table>
             </div>
-            <p class="first-letter-spacing">
+            <p class="note first-letter-spacing">
                 同じチームメイトでの開発第二弾。今度はDocker環境でLaravelを使ってみようという話に。
                 Laravelは、授業で一度サンプルを真似たアプリを作りましたが、正直よく分からない状態でした。
                 その際の環境はAWSでしたので、Dockerは未知の世界。

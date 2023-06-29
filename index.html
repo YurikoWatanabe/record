@@ -1,192 +1,319 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>ポートフォリオ</title>
-</head>
-<body>
-    <div class="container">
-        <div class="content">
-            <h1>渡部由里子&nbsp;ポートフォリオ</h1>
-            <ul>
-                <li><a href="#section1">学習歴</a></li>
-                <li><a href="#section2">初めての自由課題</a></li>
-                <li><a href="#section3">初めてのチーム開発</a></li>
-                <li><a href="#section4">Laravelでチーム開発</a></li>
-            </ul>
-            <div class="overview">
-                <div class="shadow">
-                    <h2 id="section1">学習歴</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&family=Slackside+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/952bacc63d.js" crossorigin="anonymous"></script>
+
+        <title>ポートフォリオ</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="paper">
+                <header class="note">
+                    <ul class="header">
+                        <li><a class="marker-yellow" href="#section1">学習歴</a></li>
+                        <li><a class="marker-yellow href="#section2">初めての自由課題</a></li>
+                        <li><a class="marker-yellow href="#section3">初めてのチーム開発</a></li>
+                        <li><a class="marker-yellow href="#section4">Laravelでチーム開発</a></li>
+                    </ul>
+                </header>
+                <div class="content">
+                    <div class="deg">
+                        <div class="stamp-position">
+                            <div class="stamp stamp-approve">
+                                <span>2023.6.26</span>
+                                <span>渡部由里子</span>
+                            </div>
+                        </div>
+                        <div class="sticky">
+                            <h1>ポートフォリオ</h1>
+                        </div>
+                    </div>
+                    <div class="overview">
+                        <div class="h2-position">
+                            <h2 id="section1">学習歴</h2>
+                        </div>
+                    </div>
+                        <table border="1">  
+                            <tr>  
+                                <th>学習開始時期</th>
+                                <td>2022年12月から</td>
+                            </tr>
+                            <tr>              
+                            <tr>  
+                                <th>主な学習方法</th>
+                                <td>職業訓練（2022年12月19日から2023年6月16日まで受講）</td>
+                            </tr>
+                            <tr>
+                                <th>学習言語</th>
+                                <td>HTML、CSS、PHP、JavaScript</td>
+                            </tr>
+                            <tr>
+                                <th>学習フレームワーク</th>
+                                <td>Laravel</td>
+                            </tr>
+                            <tr>
+                                <th>資格</th>
+                                <td>PHP8技術者認定初級試験（2023年6月 取得）</td>
+                            </tr>                
+                        </table>
+                    <h3 class="backdrop" data-target="backdrop_text1"><span class="red-line">背景<i class="fa-regular fa-hand-pointer"></i></span></h3>
+                    <p id="backdrop_text1" class="backdrop_text note first-letter-spacing hidden">
+                        以前からプログラミングに興味があり、プロゲートなどで遊んでみたり。
+                        しかし具体的な学習方法が分からず、敷居の高さを感じておりました。
+                        そんな折、職業訓練でプログラミングを学べることを知り飛びつきました。
+                    </p>
                 </div>
-                <table border="1">  
-                    <tr>  
-                        <th>学習開始時期</th>
-                        <td>2022年12月から</td>
-                    </tr>
-                    <tr>              
-                    <tr>  
-                        <th>主な学習方法</th>
-                        <td>職業訓練（2022年12月19日から2023年6月16日まで受講）</td>
-                    </tr>
-                    <tr>
-                        <th>学習言語</th>
-                        <td>HTML、CSS、PHP、JavaScript、Laravel</td>
-                    </tr>
-                    <tr>
-                        <th>資格</th>
-                        <td>PHP8技術者認定初級試験（2023年6月 取得）</td>
-                    </tr>                
-                </table>
             </div>
-            <p class="first-letter-spacing">
-                以前からプログラミングに興味があり、プロゲートなどで遊んでみたり。
-                しかし具体的な学習方法が分からず、敷居の高さを感じておりました。
-                そんな折、職業訓練でプログラミングを学べることを知り飛びつきました。
-            </p>
-            <div class="overview">
-                <div class="shadow">
-                    <h2 id="section2">初めての自由課題</h2>
+            <div class="paper">
+                <div class="overview">
+                    <div class="h2-position">
+                        <h2 id="section2">初めての自由課題</h2>
+                    </div>
+                    <div class="first-theme">
+                        <a href="https://yurikowatanabe.github.io/git_test/" target="_blank" rel="noopener noreferrer" class="link-wrapper">
+                            <span class="work-title sticky-s-pink">「javaScript学んだことまとめ」<i class="fa-regular fa-hand-pointer"></i></span>
+                            <img id="main_first_image" class="thum" src="img/first_top.png" alt="javaScript学んだことまとめのイメージ画像">                            
+                        </a>
+                        <!--画像ページ切り替え--> 
+                        <div class="arrow-container">
+                            <div class="arrow"> 
+                                <div class="nav-wrapper">                  
+                                    <span class="nav left1"><span class="left tooltip">戻る</span><i class="fa-solid fa-chevron-left"></i></span>
+                                </div> 
+                                <div class="nav-wrapper">   
+                                    <span class="nav right1"><span class="right tooltip">次へ</span><i class="fa-solid fa-angle-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--リポジトリへのリンク-->
+                    <a class="repository sticky-s-green" href="https://github.com/YurikoWatanabe/git_test" target="_blank" rel="noopener noreferrer"><span class="repo-title">「javaScript学んだことまとめ」<br>リポジトリ</span><i class="fa-regular fa-hand-pointer"></i></a>
+                    <div class="content">
+                        <table border="1">                
+                            <tr>
+                                <th>タイトル</th>
+                                <td>JavaScript学んだことまとめ</td>
+                            </tr>
+                            <tr>
+                                <th>内容</th> 
+                                <td>ウサギとサルが、コードを見ながらJavaScriptについて解説していくサイト</td> 
+                            </tr> 
+                            <tr>                 
+                                <th>制作期間</th>
+                                <td>約10日（トップページと「カウントダウンタイマー」のページで中断）</td>
+                            </tr>
+                            <tr>
+                                <th>使用言語</th>
+                                <td>html、css、JavaScript</td>
+                            </tr>
+                            <tr>
+                                <th>ポイント</th>
+                                <td>・吹き出しを使ってキャラクターに喋らせる
+                                <br>・ライブラリ（prism.js）を使ってコードを見やすく</td>
+                            </tr>
+                            <tr>
+                                <th>学習で得たもの</th>
+                                <td>JavaScriptを使い、動的なページを作れるようになりました。</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <a class="item" href="https://yurikowatanabe.github.io/git_test/" target="_blank" rel="noopener noreferrer">「javaScript学んだことまとめ」へのリンク</a><br>
-                <a class="item" href="https://github.com/YurikoWatanabe/git_test" target="_blank" rel="noopener noreferrer">「javaScript学んだことまとめのリポジトリ」へのリンク</a>
-                <table border="1">                
-                    <tr>
-                        <th>タイトル</th>
-                        <td>JavaScript学んだことまとめ</td>
-                    </tr>
-                    <tr>
-                        <th>内容</th> 
-                        <td>ウサギとサルが、コードを見ながらJavaScriptについて解説していくサイト</td> 
-                    </tr> 
-                    <tr>                 
-                        <th>制作期間</th>
-                        <td>約10日（トップページと「カウントダウンタイマー」のページで中断）</td>
-                    </tr>
-                    <tr>
-                        <th>使用言語</th>
-                        <td>html、css、JavaScript</td>
-                    </tr>
-                    <tr>
-                        <th>ポイント</th>
-                        <td>・吹き出しを使ってキャラクターに喋らせる
-                        <br>・ライブラリ（prism.js）を使ってコードを見やすく</td>
-                    </tr>
-                    <tr>
-                        <th>学習で得たもの</th>
-                        <td>JavaScriptを使い、動的なページを作れるようになりました。</td>
-                    </tr>
-                </table>
+                <h3 class="backdrop" data-target="backdrop_text2"><span class="red-line">背景<i class="fa-regular fa-hand-pointer"></i></span></h3>
+                <p id="backdrop_text2" class="backdrop_text note first-letter-spacing hidden">
+                    初めての自由課題として、JavaScriptを使った何かを作ることに。
+                    提出期限は5日後。
+                    JavaScriptの授業を振り返りたい思いから、「JavaScriptで学んだことまとめサイト」を考えました。
+                    が、5日間という期限を考えると無謀な計画でした。
+                    当初6ページに渡る壮大な設計は、結局トップページを含めた2ページ分のみの完成で提出。
+                    <br>制作期間見積りの難しさ、少しづつ出来上がっていく喜び、いざ作ってみて初めて「なるほど」と思える場面など、実りの多い課題となりました。
+                    <br>作品は中途半端でしたが、GitHubを使ってみたいという気持ちもあり、手探りで連携させました。
+                    正直何が便利なのか理解できないまま、作ったサイトをスマホで見たいという一心で触ってみました。
+                    提出期限は過ぎましたが、スマホ対応のハンバーガーメニューなど、楽しくチマチマ作成。
+                </p>
+                <h3 class="consideration" data-target="consideration_text1"><span class="red-line">考察<i class="fa-regular fa-hand-pointer"></i></span></h3>
+                <p id="consideration_text1" class="consideration_text note first-letter-spacing hidden">
+                    初めての自由課題として、JavaScriptを使った何かを作ることに。
+                    提出期限は5日後。
+                    JavaScriptの授業を振り返りたい思いから、「JavaScriptで学んだことまとめサイト」を考えました。
+                    が、5日間という期限を考えると無謀な計画でした。
+                    当初6ページに渡る壮大な設計は、結局トップページを含めた2ページ分のみの完成で提出。
+                    <br>制作期間見積りの難しさ、少しづつ出来上がっていく喜び、いざ作ってみて初めて「なるほど」と思える場面など、実りの多い課題となりました。
+                    <br>作品は中途半端でしたが、GitHubを使ってみたいという気持ちもあり、手探りで連携させました。
+                    正直何が便利なのか理解できないまま、作ったサイトをスマホで見たいという一心で触ってみました。
+                    提出期限は過ぎましたが、スマホ対応のハンバーガーメニューなど、楽しくチマチマ作成。
+                </p>
             </div>
-            <p class="first-letter-spacing">
-                初めての自由課題として、JavaScriptを使った何かを作ることに。
-                提出期限は5日後。
-                JavaScriptの授業を振り返りたい思いから、「JavaScriptで学んだことまとめサイト」を考えました。
-                が、5日間という期限を考えると無謀な計画でした。
-                当初6ページに渡る壮大な設計は、結局トップページを含めた2ページ分のみの完成で提出。
-                <br>制作期間見積りの難しさ、少しづつ出来上がっていく喜び、いざ作ってみて初めて「なるほど」と思える場面など、実りの多い課題となりました。
-                <br>作品は中途半端でしたが、GitHubを使ってみたいという気持ちもあり、手探りで連携させました。
-                正直何が便利なのか理解できないまま、作ったサイトをスマホで見たいという一心で触ってみました。
-                提出期限は過ぎましたが、スマホ対応のハンバーガーメニューなど、楽しくチマチマ作成。
-            </p>
+            <div class="paper">
+                <div class="overview">
+                    <div class="h2-position">
+                        <h2 id="section3">初めてのチーム開発</h2>
+                    </div>
+                    <div class="kanji_theme">
+                        <a href="https://bpkuma.github.io/KonnaKanji/" target="_blank" rel="noopener noreferrer" class="link-wrapper">
+                        <span class="work-title sticky-s-pink">「こんな漢字」<i class="fa-regular fa-hand-pointer"></i></span>
+                        <img id="main_kanji_image" src="img/kanji_q1.png" alt="こんな漢字のイメージ画像">
+                        </a>
+                        <!--画像ページ切り替え--> 
+                        <div class="arrow-container">
+                            <div class="arrow">
+                                <div class="nav-wrapper">
+                                    <span class="nav left2"><span class="left tooltip">戻る</span><i class="fa-solid fa-chevron-left"></i></span>
+                                </div>
+                                <div class="nav-wrapper">
+                                    <span class="nav right2"><span class="right tooltip">次へ</span><i class="fa-solid fa-angle-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--リポジトリへのリンク-->
+                    <a class="repository sticky-s-green" href="https://github.com/BPkuma/KonnaKanji" target="_blank" rel="noopener noreferrer"><span class="repo-title">「こんな漢字」<br>リポジトリ</span><i class="fa-regular fa-hand-pointer"></i></a>
+                    <div class="content">
+                        <table border="1">
+                            <tr>
+                                <th>タイトル</th>
+                                <td>こんな漢字</td>
+                            </tr>
+                            <tr>
+                                <th>内容</th>
+                                <td>ランダムな質問に直感で答えていくと、オリジナル漢字を生成、保存できるアプリ</td>
+                            </tr>
+                            <tr>
+                                <th>制作期間</th>
+                                <td>約10日</td>
+                            </tr>
+                            <tr>
+                                <th>使用言語</th>
+                                <td>html、css、JavaScript</td>
+                            </tr>
+                            <tr>
+                                <th>ポイント</th>
+                                <td>・ページ遷移させずにさくさく進む
+                                <br>・実在しない自分だけのオリジナル漢字が作れる</td>
+                            </tr>  
+                            <tr>
+                                <th>学習で得たもの</th>
+                                <td>他の人のコードを読むこと、GitHubを使うことに少し慣れました。</td>
+                            </tr>              
+                        </table>
+                    </div>
+                </div>
+                <h3 class="backdrop" data-target="backdrop_text3"><span class="red-line">背景<i class="fa-regular fa-hand-pointer"></i></span></h3>
+                <p id="backdrop_text3" class="backdrop_text note first-letter-spacing hidden">
+                    クラス内で希望者がいれば、チーム開発の時間に充てても良いという流れになったため希望。
+                    4人集まり、GitHubを使って管理していこうという話に。
+                    チームメイトの1人が、先の自由課題の際、私以上に壮大な設計をしてしまい、ほとんど進められなかったプロジェクトをチームで
+                    進めたいとの申し出から、「こんな漢字」制作の運びとなりました。
+                    <br>ここで本格的にGitHubを触ることとなり、制作期間10日間のうち、最初の3日程はGitHubに持っていかれたような記憶です。
+                    自分以外の人が書いたソースコードを読み解きながら、自分のコードを実装するという作業は楽しくも難易度の高い作業に感じました。
+                    主に見た目に関わる機能（JavaScriptとCSS）を担当。
+                </p>
+                <h3 class="consideration" data-target="consideration_text2"><span class="red-line">考察<i class="fa-regular fa-hand-pointer"></i></span></h3>
+                <p id="consideration_text2" class="consideration_text note first-letter-spacing hidden">
+                    クラス内で希望者がいれば、チーム開発の時間に充てても良いという流れになったため希望。
+                    4人集まり、GitHubを使って管理していこうという話に。
+                    チームメイトの1人が、先の自由課題の際、私以上に壮大な設計をしてしまい、ほとんど進められなかったプロジェクトをチームで
+                    進めたいとの申し出から、「こんな漢字」制作の運びとなりました。
+                    <br>ここで本格的にGitHubを触ることとなり、制作期間10日間のうち、最初の3日程はGitHubに持っていかれたような記憶です。
+                    自分以外の人が書いたソースコードを読み解きながら、自分のコードを実装するという作業は楽しくも難易度の高い作業に感じました。
+                    主に見た目に関わる機能（JavaScriptとCSS）を担当。
+                </p>
+            </div>
+            <div class="paper">
+                <div class="overview">
+                    <div class="h2-position">
+                        <h2 id="section4">Laravelでチーム開発</h2>   
+                    </div> 
+                    <div class="summarize_theme">
+                        <div class="link-wrapper">
+                            <span class="work-title sticky-s-white">「JavaScriptおさらい」<br>画像<i class="fa-solid fa-down-long"></i></span>
+                            <img id="main_summarize_image" src="img/summarize_top1.png" alt="JavaScriptおさらいのイメージ画像">
+                        </div> 
+                        <!--画像ページ切り替え-->
+                        <div class="arrow-video-container">
+                            <div class="arrow">
+                                <div class="nav-wrapper">
+                                    <span class="nav left3"><span class="left tooltip">戻る</span><i class="fa-solid fa-chevron-left"></i></span>
+                                </div>
+                                <div class="nav-wrapper">
+                                    <span class="nav right3"><span class="right tooltip">次へ</span><i class="fa-solid fa-angle-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="link-wrapper video-wrapper">
+                            <span class="work-title sticky-s-white">「JavaScriptおさらい」<br>動画<i class="fa-solid fa-down-long"></i></span>
+                            <video src="sammarize_video.mp4" width="630" height="360" controls></video>
+                        </div>
+                    </div>
+                    <!--リポジトリへのリンク-->
+                    <a class="repository sticky-s-green" href="https://github.com/BPkuma/myportfolio" target="_blank" rel="noopener noreferrer"><span class="repo-title">「JavaScriptおさらい」<br>リポジトリ<i class="fa-regular fa-hand-pointer"></i></span></a>
+                    <div class="content">
+                        <table border="1">
+                            <tr>
+                                <th>タイトル</th>
+                                <td>myportfolio（「JavaScriptおさらい」のページ担当）</td>
+                            </tr>
+                            <tr>
+                                <th>内容</th>
+                                <td>「JavaScript学んだことまとめ」を、「JavaScriptおさらい」としてLaravelで作り直したもの。</td>
+                            </tr>
+                            <tr>
+                                <th>制作期間</th>
+                                <td>約3週間（開発途中）</td>
+                            </tr>
+                            <tr>
+                                <th>開発環境</th>
+                                <td>Docker</td>
+                            </tr>
+                            <tr>
+                                <th>フレームワーク</th>
+                                <td>Laravel</td>
+                            </tr>
+                            <tr>
+                                <th>ポイント</th>
+                                <td>・ドラクエっぽい世界観
+                                <br>・ドット絵キャラにしゃべらせる
+                                <br>・セリフはテーブルで管理
+                            </td>                    
+                            </tr>        
+                            <tr>
+                                <th>学習で得たもの</th>
+                                <td>未知の世界であるDocker環境、授業では呑み込めなかったLaravel、不慣れなGitHubという不安要素だらけの中、少しずつ使えるようになっています。（現在進行形）</td>                    
+                            </tr>          
+                        </table>
+                    </div>
+                </div>
+                <h3 class="backdrop" data-target="backdrop_text4"><span class="red-line">背景<i class="fa-regular fa-hand-pointer"></i></span></h3>
+                <p id="backdrop_text4" class="backdrop_text note first-letter-spacing hidden">
+                    同じチームメイトでの開発第二弾。今度はDocker環境でLaravelを使ってみようという話に。
+                    Laravelは、授業で一度サンプルを真似たアプリを作りましたが、正直よく分からない状態でした。
+                    その際の環境はAWSでしたので、Dockerは未知の世界。
+                    <br>トップページはチームメイト共通で使用し、リンク先からはそれぞれ作りたいものを開発していこう、という方向になりました。
+                    自由課題での反省を踏まえ、不完全なままだったサイトを完成させることを目標としました。
+                    まずは最低限の雛型を完成させること。のちのちはDBを使ってレベル制度導入などしたいと思っています。
+                    雛型はなんとか完成しましたが、デプロイのやり方などはまだ勉強できていないため、
+                    デモ動画をご覧いただければ幸いです。
+                </p>
+                <h3 class="consideration" data-target="consideration_text3"><span class="red-line">考察<i class="fa-regular fa-hand-pointer"></i></span></h3>
+                <p id="consideration_text3" class="consideration_text note first-letter-spacing hidden">
+                    同じチームメイトでの開発第二弾。今度はDocker環境でLaravelを使ってみようという話に。
+                    Laravelは、授業で一度サンプルを真似たアプリを作りましたが、正直よく分からない状態でした。
+                    その際の環境はAWSでしたので、Dockerは未知の世界。
+                    <br>トップページはチームメイト共通で使用し、リンク先からはそれぞれ作りたいものを開発していこう、という方向になりました。
+                    自由課題での反省を踏まえ、不完全なままだったサイトを完成させることを目標としました。
+                    まずは最低限の雛型を完成させること。のちのちはDBを使ってレベル制度導入などしたいと思っています。
+                    雛型はなんとか完成しましたが、デプロイのやり方などはまだ勉強できていないため、
+                    デモ動画をご覧いただければ幸いです。
+                </p>
+            </div>
             
-            <div class="overview">
-                <div class="shadow">
-                    <h2 id="section3">初めてのチーム開発</h2>
-                </div>
-                <a class="item" href="https://bpkuma.github.io/KonnaKanji/" target="_blank" rel="noopener noreferrer">「こんな漢字」へのリンク</a><br>
-                <a class="item" href="https://github.com/BPkuma/KonnaKanji" target="_blank" rel="noopener noreferrer">「こんな漢字のリポジトリ」へのリンク</a>
-                <table border="1">
-                    <tr>
-                        <th>タイトル</th>
-                        <td>こんな漢字</td>
-                    </tr>
-                    <tr>
-                        <th>内容</th>
-                        <td>ランダムな質問に直感で答えていくと、オリジナル漢字を生成、保存できるアプリ</td>
-                    </tr>
-                    <tr>
-                        <th>制作期間</th>
-                        <td>約10日</td>
-                    </tr>
-                    <tr>
-                        <th>使用言語</th>
-                        <td>html、css、JavaScript</td>
-                    </tr>
-                    <tr>
-                        <th>ポイント</th>
-                        <td>・ページ遷移させずにさくさく進む
-                        <br>・実在しない自分だけのオリジナル漢字が作れる</td>
-                    </tr>  
-                    <tr>
-                        <th>学習で得たもの</th>
-                        <td>他の人のコードを読むこと、GitHubを使うことに少し慣れました。</td>
-                    </tr>              
-                </table>
-            </div>
-            <p class="first-letter-spacing">
-                クラス内で希望者がいれば、チーム開発の時間に充てても良いという流れになったため希望。
-                4人集まり、GitHubを使って管理していこうという話に。
-                チームメイトの1人が、先の自由課題の際、私以上に壮大な設計をしてしまい、ほとんど進められなかったプロジェクトをチームで
-                進めたいとの申し出から、「こんな漢字」制作の運びとなりました。
-                <br>ここで本格的にGitHubを触ることとなり、制作期間10日間のうち、最初の3日程はGitHubに持っていかれたような記憶です。
-                自分以外の人が書いたソースコードを読み解きながら、自分のコードを実装するという作業は楽しくも難易度の高い作業に感じました。
-                主に見た目に関わる機能（JavaScriptとCSS）を担当。
-            </p>
-            <div class="overview">
-                <div class="shadow">
-                    <h2 id="section4">Laravelでチーム開発</h2>   
-                </div>     
-                <video src="js_review.mp4" width="630" height="360" controls></video>
-                <a class="item" href="https://github.com/BPkuma/myportfolio" target="_blank" rel="noopener noreferrer"><br>
-                    「myportfolioのリポジトリ」へのリンク</a>
-                <table border="1">
-                    <tr>
-                        <th>タイトル</th>
-                        <td>myportfolio（「JavaScriptおさらい」のページ担当）</td>
-                    </tr>
-                    <tr>
-                        <th>内容</th>
-                        <td>「JavaScript学んだことまとめ」を、「JavaScriptおさらい」としてLaravelで作り直したもの。</td>
-                    </tr>
-                    <tr>
-                        <th>制作期間</th>
-                        <td>約2週間（開発途中）</td>
-                    </tr>
-                    <tr>
-                        <th>開発環境</th>
-                        <td>Docker</td>
-                    </tr>
-                    <tr>
-                        <th>フレームワーク</th>
-                        <td>Laravel</td>
-                    </tr>
-                    <tr>
-                        <th>ポイント</th>
-                        <td>・ドラクエっぽい世界観
-                        <br>・ドット絵キャラにしゃべらせる
-                        <br>・セリフはテーブルで管理
-                    </td>                    
-                    </tr>        
-                    <tr>
-                        <th>学習で得たもの</th>
-                        <td>未知の世界であるDocker環境、授業では呑み込めなかったLaravel、不慣れなGitHubという不安要素だらけの中、少しずつ使えるようになっています。（現在進行形）</td>                    
-                    </tr>          
-                </table>
-            </div>
-            <p class="first-letter-spacing">
-                同じチームメイトでの開発第二弾。今度はDocker環境でLaravelを使ってみようという話に。
-                Laravelは、授業で一度サンプルを真似たアプリを作りましたが、正直よく分からない状態でした。
-                その際の環境はAWSでしたので、Dockerは未知の世界。
-                <br>トップページはチームメイト共通で使用し、リンク先からはそれぞれ作りたいものを開発していこう、という方向になりました。
-                自由課題での反省を踏まえ、不完全なままだったサイトを完成させることを目標としました。
-                まずは最低限の雛型を完成させること。のちのちはDBを使ってレベル制度導入などしたいと思っています。
-                雛型はなんとか完成しましたが、デプロイのやり方などはまだ勉強できていないため、
-                デモ動画をご覧いただければ幸いです。
-            </p>
         </div>
-    </div>
-    
-</body>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>    
+    </body>
 </html>

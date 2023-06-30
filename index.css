@@ -718,3 +718,51 @@ td {
         left: -41%;
     }
 }
+/*360px以上599px以下*/
+@media (min-width: 360px) and (max-width: 599px) {
+    .paper {
+        width: 100%;
+    }
+    .paper::before {
+        opacity: 0.5;
+        left: 1px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .arrow-container, .arrow-video-container {
+        left: -44%;
+    }
+    .nav-wrapper {
+        margin: 0 240%;
+    }
+    .sticky-position {
+        top: -50px;
+        left: -20%;
+    }
+    .stamp-position {
+        left: -50%;
+        top: 5%;
+    }
+    .sticky-s-green {
+        width: 15rem;
+    }
+    nav.hamb {
+        width: 80%;
+    }
+    img {
+        height: 250px;
+        width: 95%;
+    }
+    .work-title {
+        width: 80%;
+        margin: 1% -3% 1%;
+    }
+    .repo-title {
+        margin-top: -5%;
+        font-size: 15px;
+    }
+    .video {
+        margin-top: -35%;
+    }
+}

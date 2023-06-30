@@ -14,13 +14,33 @@
     <body>
         <div class="container">
             <div class="paper">
-                <header class="note">
-                    <ul class="header">
-                        <li><a class="marker-yellow" href="#section1">学習歴</a></li>
-                        <li><a class="marker-yellow href="#section2">初めての自由課題</a></li>
-                        <li><a class="marker-yellow href="#section3">初めてのチーム開発</a></li>
-                        <li><a class="marker-yellow href="#section4">Laravelでチーム開発</a></li>
-                    </ul>
+                <header>
+                    <nav class="pc note">
+                        <ul class="header">
+                            <li><a class="marker-yellow" href="#section1">学習歴</a></li>
+                            <li><a class="marker-yellow" href="#section2">初めての自由課題</a></li>
+                            <li><a class="marker-yellow" href="#section3">初めてのチーム開発</a></li>
+                            <li><a class="marker-yellow" href="#section4">Laravelでチーム開発</a></li>
+                        </ul>
+                    </nav>
+                    <div id="hamb-area">
+                        <nav class="hamb">
+                            <div class="inner">
+                                <ul class="hamb-header">
+                                    <li><a class="marker-yellow" href="#section1">学習歴</a></li>
+                                    <li><a class="marker-yellow" href="#section2">初めての自由課題</a></li>
+                                    <li><a class="marker-yellow" href="#section3">初めてのチーム開発</a></li>
+                                    <li><a class="marker-yellow" href="#section4">Laravelでチーム開発</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div class="toggle_btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div id="mask"></div>
+                    </div>
                 </header>
                 <div class="content">
                     <div class="sticky-position">
@@ -37,7 +57,7 @@
                         </div>
                     </div>
                     <div class="overview">
-                        <div class="h2-position">
+                        <div class="h2-position history">
                             <h2 id="section1">学習歴</h2>
                         </div>
                     </div>

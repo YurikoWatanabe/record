@@ -39,21 +39,28 @@ let current3 = 0;
 
 //画像切り替えのファンクション
 function changeImage(current, num, images) {
-    if(current + num >= 0 && current + num < images.length) {
+    if (current == 0 && num < 0) {
+        current = images.length - 1;
+    } else if (current == images.length - 1 && num > 0) {
+        current = 0;
+    } else if(current + num >= 0 && current + num < images.length) {
         current += num;        
     }    
     return current;
 };
 
 /*画像切り替え用・JavaScriot学んだことまとめクリックイベント*/
-left1.addEventListener('click', function() {
+left1.addEventListener('click', function() {      
     current1 = changeImage(current1, -1, images1);
     main_first_image.src = images1[current1];
+    console.log(current1);
 });
 
 right1.addEventListener('click', function() {
     current1 = changeImage(current1, 1, images1);
     main_first_image.src = images1[current1];
+    console.log(current1); 
+
 });
 
 /*画像切り替え用・こんな漢字クリックイベント*/
@@ -81,6 +88,7 @@ right3.addEventListener('click', function() {
 (function($) {
     let $nav   = $('#hamb-area');
     let $btn   = $('.toggle_btn');
+    let $hamb_nav = $('.hamb_nav');
     let $mask  = $('#mask');
     let open   = 'open'; // class
     // menu open close
@@ -91,6 +99,12 @@ right3.addEventListener('click', function() {
         $nav.removeClass(open);
       }
     });
+    // menu close
+    $hamb_nav.on('click', function() {
+        if ($nav.hasClass(open)) {
+          $nav.removeClass(open);
+        } 
+      });
     // mask close
     $mask.on('click', function() {
       $nav.removeClass(open);

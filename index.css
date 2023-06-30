@@ -130,7 +130,7 @@ nav.inner ul li a:hover {
     display: inline-block;
     width: 100%;
 }
-
+/*スタンプ（大）*/
 .stamp-position {
     position: absolute;
     height: 100px;
@@ -181,6 +181,58 @@ nav.inner ul li a:hover {
 .stamp-approve span:first-child::before {
     content: "済";
 }
+/*スタンプ（小）*/
+.stamp-s-position {
+    position: absolute;
+    height: 10px;
+    transform: rotate(7deg);
+}
+
+.stamp-s {
+    font-size: 0.5px;
+    border: 1px double #f00;
+    border-radius: 50%;
+    color: #f00;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    margin: auto;
+    top: 1%;
+    left: 670%;
+    opacity: 0;
+}
+.stamp-s span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.stamp-s span:first-child::before {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    border-bottom: 1px solid #f00;
+    line-height: 0.8;
+}
+.stamp-s span:first-child {
+    line-height: 50px;
+}
+.stamp-s span:last-child {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    border-top: 1px solid #f00;
+    padding-top: 1px;
+    line-height: 1;
+}
+.stamp-s-approve span:first-child::before {
+    content: "済";
+}
 /*トップの付箋*/
 .deg {
     transform: rotate(-6deg);
@@ -209,7 +261,6 @@ nav.inner ul li a:hover {
 h1 {
     margin-top: -13%;
     margin-left: -5%;
-    /* font-family: 'Shizuru', cursive; */
     font-family: 'Slackside One', cursive;
     font-size: 4rem;    
 }
@@ -267,7 +318,7 @@ li {
     font-size: xx-large;
 }
 
-h2, .note, header, table {
+.note {
     font-family: serif;
 }
 
@@ -650,7 +701,7 @@ td {
         left: -3%;
     }
     .toggle_btn {
-        top: 7%;
+        top: 6%;
     }
     .history {
         margin-top: -1%;
@@ -666,7 +717,12 @@ td {
     nav.note {
         padding: 0 0 1%;    
     }
-    
+    video {
+        margin-top: -10%;
+    }
+    .hamb-header a {
+        font-size: 25px;
+    }    
 }
 /**645ｐｘ以下***************************/
 @media (max-width: 645px) {
@@ -674,7 +730,7 @@ td {
         margin: -45px auto 0;
     }
     nav.note {
-        margin-top: -45px;
+        margin-top: 40px;
     }
     .sticky-position {
         top: 10px;
@@ -685,31 +741,35 @@ td {
         height: 1.5rem;
     }
     h1 {
-        font-size: 40px;
+        font-size: 38px;
     }
-    .stamp-position {
-        left: 80%;
-        top: 70%;
+    .stamp {
+        opacity: 0;
     }
+    .stamp-s {
+        opacity: 1;
+    }
+    .stamp-s-position {
+        left: -45%;
+        top: -10%;
+    }
+    
     .toggle_btn {
         top: 10%;
     }
     .paper::before {
         left: 5px;
     }
-    .arrow-container {
-        left: -32%;
+    .arrow-container, .arrow-video-container {
+        left: -34%;
     }
-    .hamb-header li a {
-        font-size: 25px;
+    .nav-wrapper {
+        margin: 0 230%;
     }
+    
 }
 /**600ｐｘ以下***************************/
 @media (max-width: 600px) { 
-    .stamp-position {
-        left: 10%;
-        top: 55%;
-    }
     .work-title {
         width: 65%;
         margin: 1% 10% 1%;
@@ -739,10 +799,6 @@ td {
     .sticky-position {
         top: -50px;
         left: -20%;
-    }
-    .stamp-position {
-        left: -50%;
-        top: 5%;
     }
     .sticky-s-green {
         width: 15rem;

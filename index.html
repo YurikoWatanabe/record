@@ -3,11 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <link rel="stylesheet" href="index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shizuru&family=Slackside+One&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/952bacc63d.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shizuru&family=Slackside+One&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/952bacc63d.js" crossorigin="anonymous"></script>
 
         <title>ポートフォリオ</title>
     </head>
@@ -64,7 +65,7 @@
                     </div>
                     <div class="overview">
                         <div class="h2-position history">
-                            <h2 id="section1">学習歴</h2>
+                            <h2 id="section1"><span class="marker-yellow hamb_nav">学習歴</span></h2>
                         </div>
                     </div>
                         <table border="1">  
@@ -90,7 +91,10 @@
                                 <td>PHP8技術者認定初級試験（2023年6月 取得）</td>
                             </tr>                
                         </table>
-                    <h3 class="backdrop" data-target="backdrop_text1"><span class="red-line">背景<i class="fa-regular fa-hand-pointer"></i></span></h3>
+                    <h3 class="backdrop" data-target="backdrop_text1"><span class="under_line">&emsp;背&emsp;景&emsp;</span></h3>
+                    <div class="hand-position school">
+                        <i class="fa-regular fa-hand-pointer"></i>
+                    </div>
                     <p id="backdrop_text1" class="backdrop_text note first-letter-spacing hidden">
                         以前からプログラミングに興味があり、プロゲートなどで遊んでみたり。
                         しかし具体的な学習方法が分からず、敷居の高さを感じておりました。
@@ -101,32 +105,40 @@
             <div class="paper">
                 <div class="overview">
                     <div class="h2-position">
-                        <h2 id="section2">初めての自由課題</h2>
+                        <h2 id="section2"><span class="marker-yellow hamb_nav">初めての自由課題</span></h2>
                     </div>
                     <div class="first-theme link-wrapper">
                         <a href="https://yurikowatanabe.github.io/git_test/" target="_blank" rel="noopener noreferrer">
-                            <span class="work-title sticky-s-pink">「javaScript学んだことまとめ」<i class="fa-regular fa-hand-pointer"></i></span>
+                            <span class="work-title sticky-s-pink">「javaScript学んだことまとめ」</span>
                             <img id="main_first_image" class="thum" src="img/first_top.png" alt="javaScript学んだことまとめのイメージ画像">                            
                         </a>
+                        <div class="hand-position work-first">
+                            <i class="fa-regular fa-hand-pointer"></i>
+                        </div>
                         <!--画像ページ切り替え--> 
-                        <div class="arrow-container">
-                            <div class="arrow"> 
-                                <div class="nav-wrapper">                  
-                                    <span class="nav left1"><span class="left tooltip">戻る</span><i class="fa-solid fa-chevron-left"></i></span>
-                                </div> 
-                                <div class="nav-wrapper">   
-                                    <span class="nav right1"><span class="right tooltip">次へ</span><i class="fa-solid fa-angle-right"></i></span>
+                        <div class="arrow-position first">
+                            <div class="arrow-container">
+                                <div class="arrow"> 
+                                    <div class="nav-wrapper">                  
+                                        <span class="nav left1"><span class="left tooltip">戻る</span><i class="fa-solid fa-chevron-left"></i></span>
+                                    </div> 
+                                    <div class="nav-wrapper">   
+                                        <span class="nav right1"><span class="right tooltip">次へ</span><i class="fa-solid fa-angle-right"></i></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--リポジトリへのリンク-->
-                    <a class="repository sticky-s-green" href="https://github.com/YurikoWatanabe/git_test" target="_blank" rel="noopener noreferrer"><span class="repo-title">「javaScript学んだことまとめ」<br>リポジトリ</span><i class="fa-regular fa-hand-pointer"></i></a>
+                    <a class="repository sticky-s-green" href="https://github.com/YurikoWatanabe/git_test" target="_blank" rel="noopener noreferrer"><span class="repo-title">「javaScript学んだことまとめ」<span class="new-line"><br></span>リポジトリ</span></a>
+                    <div class="hand-position repo-first">
+                        <i class="fa-regular fa-hand-pointer"></i>
+                    </div>
                     <div class="content">
                         <table border="1">                
                             <tr>
                                 <th>タイトル</th>
-                                <td>JavaScript学んだことまとめ</td>
+                                <td>「JavaScript学んだことまとめ」</td>
                             </tr>
                             <tr>
                                 <th>内容</th> 
@@ -152,7 +164,10 @@
                         </table>
                     </div>
                 </div>
-                <h3 class="backdrop" data-target="backdrop_text2"><span class="red-line">背景<i class="fa-regular fa-hand-pointer"></i></span></h3>
+                <h3 class="backdrop" data-target="backdrop_text2"><span class="under_line">&emsp;背&emsp;景&emsp;</span></h3>
+                <div class="hand-position back-first">
+                    <i class="fa-regular fa-hand-pointer"></i>
+                </div>
                 <p id="backdrop_text2" class="backdrop_text note first-letter-spacing hidden">
                     初めての自由課題として、JavaScriptを使った何かを作ることに。
                     提出期限は5日後。
@@ -164,7 +179,10 @@
                     正直何が便利なのか理解できないまま、作ったサイトをスマホで見たいという一心で触ってみました。
                     提出期限は過ぎましたが、スマホ対応のハンバーガーメニューなど、楽しくチマチマ作成。
                 </p>
-                <h3 class="consideration" data-target="consideration_text1"><span class="red-line">考察<i class="fa-regular fa-hand-pointer"></i></span></h3>
+                <h3 class="consideration" data-target="consideration_text1"><span class="under_line">&emsp;考&emsp;察&emsp;</span></h3>
+                <div class="hand-position con-first">
+                    <i class="fa-regular fa-hand-pointer"></i>
+                </div>
                 <p id="consideration_text1" class="consideration_text note first-letter-spacing hidden">
                     初めての自由課題として、JavaScriptを使った何かを作ることに。
                     提出期限は5日後。
@@ -180,32 +198,40 @@
             <div class="paper">
                 <div class="overview">
                     <div class="h2-position">
-                        <h2 id="section3">初めてのチーム開発</h2>
+                        <h2 id="section3"><span class="marker-yellow hamb_nav">初めてのチーム開発</span></h2>
                     </div>
                     <div class="kanji_theme link-wrapper">
                         <a href="https://bpkuma.github.io/KonnaKanji/" target="_blank" rel="noopener noreferrer">
-                        <span class="work-title sticky-s-pink">「こんな漢字」<i class="fa-regular fa-hand-pointer"></i></span>
+                        <span class="work-title sticky-s-pink">「こんな漢字」</span>                        
                         <img id="main_kanji_image" src="img/kanji_q1.png" alt="こんな漢字のイメージ画像">
                         </a>
+                        <div class="hand-position work-kanji">
+                            <i class="fa-regular fa-hand-pointer"></i>
+                        </div>
                         <!--画像ページ切り替え--> 
-                        <div class="arrow-container">
-                            <div class="arrow">
-                                <div class="nav-wrapper">
-                                    <span class="nav left2"><span class="left tooltip">戻る</span><i class="fa-solid fa-chevron-left"></i></span>
-                                </div>
-                                <div class="nav-wrapper">
-                                    <span class="nav right2"><span class="right tooltip">次へ</span><i class="fa-solid fa-angle-right"></i></span>
+                        <div class="arrow-position kanji">
+                            <div class="arrow-container">
+                                <div class="arrow">
+                                    <div class="nav-wrapper">
+                                        <span class="nav left2"><span class="left tooltip">戻る</span><i class="fa-solid fa-chevron-left"></i></span>
+                                    </div>
+                                    <div class="nav-wrapper">
+                                        <span class="nav right2"><span class="right tooltip">次へ</span><i class="fa-solid fa-angle-right"></i></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--リポジトリへのリンク-->
-                    <a class="repository sticky-s-green" href="https://github.com/BPkuma/KonnaKanji" target="_blank" rel="noopener noreferrer"><span class="repo-title">「こんな漢字」<br>リポジトリ</span><i class="fa-regular fa-hand-pointer"></i></a>
+                    <a class="repository sticky-s-green" href="https://github.com/BPkuma/KonnaKanji" target="_blank" rel="noopener noreferrer"><span class="repo-title">「こんな漢字」<span class="new-line"><br></span>リポジトリ</span></a>
+                    <div class="hand-position repo-kanji">
+                        <i class="fa-regular fa-hand-pointer kanji"></i>
+                    </div>
                     <div class="content">
                         <table border="1">
                             <tr>
                                 <th>タイトル</th>
-                                <td>こんな漢字</td>
+                                <td>「こんな漢字」</td>
                             </tr>
                             <tr>
                                 <th>内容</th>
@@ -231,7 +257,10 @@
                         </table>
                     </div>
                 </div>
-                <h3 class="backdrop" data-target="backdrop_text3"><span class="red-line">背景<i class="fa-regular fa-hand-pointer"></i></span></h3>
+                <h3 class="backdrop" data-target="backdrop_text3"><span class="under_line">&emsp;背&emsp;景&emsp;</span></h3>
+                <div class="hand-position back-kanji">
+                    <i class="fa-regular fa-hand-pointer"></i>
+                </div>
                 <p id="backdrop_text3" class="backdrop_text note first-letter-spacing hidden">
                     クラス内で希望者がいれば、チーム開発の時間に充てても良いという流れになったため希望。
                     4人集まり、GitHubを使って管理していこうという話に。
@@ -241,7 +270,10 @@
                     自分以外の人が書いたソースコードを読み解きながら、自分のコードを実装するという作業は楽しくも難易度の高い作業に感じました。
                     主に見た目に関わる機能（JavaScriptとCSS）を担当。
                 </p>
-                <h3 class="consideration" data-target="consideration_text2"><span class="red-line">考察<i class="fa-regular fa-hand-pointer"></i></span></h3>
+                <h3 class="consideration" data-target="consideration_text2"><span class="under_line">&emsp;考&emsp;察&emsp;</span></h3>
+                <div class="hand-position con-kanji">
+                    <i class="fa-regular fa-hand-pointer"></i>
+                </div>
                 <p id="consideration_text2" class="consideration_text note first-letter-spacing hidden">
                     クラス内で希望者がいれば、チーム開発の時間に充てても良いという流れになったため希望。
                     4人集まり、GitHubを使って管理していこうという話に。
@@ -255,40 +287,45 @@
             <div class="paper">
                 <div class="overview">
                     <div class="h2-position">
-                        <h2 id="section4">Laravelでチーム開発</h2>   
+                        <h2 id="section4"><span class="marker-yellow hamb_nav">Laravelでチーム開発</span></h2>   
                     </div> 
                     <div class="summarize_theme">
                         <div class="link-wrapper">
-                            <span class="work-title sticky-s-white">「JavaScriptおさらい」<br>画像<i class="fa-solid fa-down-long"></i></span>
+                            <span class="work-title sticky-s-white">「JavaScriptおさらい」<span class="new-line"><br></span>画像&emsp;<i class="fa-solid fa-down-long"></i></span>
                             <img id="main_summarize_image" src="img/summarize_top1.png" alt="JavaScriptおさらいのイメージ画像">
-                        </div> 
-                        <!--画像ページ切り替え-->
-                        <div class="arrow-video-container">
-                            <div class="arrow">
-                                <div class="nav-wrapper">
-                                    <span class="nav left3"><span class="left tooltip">戻る</span><i class="fa-solid fa-chevron-left"></i></span>
-                                </div>
-                                <div class="nav-wrapper">
-                                    <span class="nav right3"><span class="right tooltip">次へ</span><i class="fa-solid fa-angle-right"></i></span>
+                            <!--画像ページ切り替え-->
+                            <div class="arrow-position summarize">
+                                <div class="arrow-video-container">
+                                    <div class="arrow">
+                                        <div class="nav-wrapper">
+                                            <span class="nav left3"><span class="left tooltip">戻る</span><i class="fa-solid fa-chevron-left"></i></span>
+                                        </div>
+                                        <div class="nav-wrapper">
+                                            <span class="nav right3"><span class="right tooltip">次へ</span><i class="fa-solid fa-angle-right"></i></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="link-wrapper video-wrapper">
-                            <span class="work-title sticky-s-white">「JavaScriptおさらい」<br>動画<i class="fa-solid fa-down-long"></i></span>
+                            <span class="work-title sticky-s-white">「JavaScriptおさらい」<span class="new-line"><br></span>動画&emsp;<i class="fa-solid fa-down-long"></i></span>
                             <video src="sammarize_video.mp4" width="630" height="360" controls></video>
                         </div>
                     </div>
                     <!--リポジトリへのリンク-->
-                    <a class="repository sticky-s-green" href="https://github.com/BPkuma/myportfolio" target="_blank" rel="noopener noreferrer"><span class="repo-title">「JavaScriptおさらい」<br>リポジトリ<i class="fa-regular fa-hand-pointer"></i></span></a>
+                    <a class="repository summarize sticky-s-green" href="https://github.com/BPkuma/myportfolio" target="_blank" rel="noopener noreferrer"><span class="repo-title">「JavaScriptおさらい」<span class="new-line"><br></span>リポジトリ</span></a>
+                    <div class="hand-position repo-summarize">
+                        <i class="fa-regular fa-hand-pointer"></i>
+                    </div>
                     <div class="content">
                         <table border="1">
                             <tr>
                                 <th>タイトル</th>
-                                <td>myportfolio（「JavaScriptおさらい」のページ担当）</td>
+                                <td>「myportfolio」（「JavaScriptおさらい」のページ担当）</td>
                             </tr>
                             <tr>
                                 <th>内容</th>
-                                <td>「JavaScript学んだことまとめ」を、「JavaScriptおさらい」としてLaravelで作り直したもの。</td>
+                                <td>「JavaScript学んだことまとめ」をLaravelで作り直したもの</td>
                             </tr>
                             <tr>
                                 <th>制作期間</th>
@@ -316,7 +353,10 @@
                         </table>
                     </div>
                 </div>
-                <h3 class="backdrop" data-target="backdrop_text4"><span class="red-line">背景<i class="fa-regular fa-hand-pointer"></i></span></h3>
+                <h3 class="backdrop" data-target="backdrop_text4"><span class="under_line">&emsp;背&emsp;景&emsp;</span></h3>
+                <div class="hand-position back-summarize">
+                    <i class="fa-regular fa-hand-pointer"></i>
+                </div>
                 <p id="backdrop_text4" class="backdrop_text note first-letter-spacing hidden">
                     同じチームメイトでの開発第二弾。今度はDocker環境でLaravelを使ってみようという話に。
                     Laravelは、授業で一度サンプルを真似たアプリを作りましたが、正直よく分からない状態でした。
@@ -327,7 +367,10 @@
                     雛型はなんとか完成しましたが、デプロイのやり方などはまだ勉強できていないため、
                     デモ動画をご覧いただければ幸いです。
                 </p>
-                <h3 class="consideration" data-target="consideration_text3"><span class="red-line">考察<i class="fa-regular fa-hand-pointer"></i></span></h3>
+                <h3 class="consideration" data-target="consideration_text3"><span class="under_line">&emsp;考&emsp;察&emsp;</span></h3>
+                <div class="hand-position con-summarize">
+                    <i class="fa-regular fa-hand-pointer"></i>
+                </div>
                 <p id="consideration_text3" class="consideration_text note first-letter-spacing hidden">
                     同じチームメイトでの開発第二弾。今度はDocker環境でLaravelを使ってみようという話に。
                     Laravelは、授業で一度サンプルを真似たアプリを作りましたが、正直よく分からない状態でした。

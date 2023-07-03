@@ -423,34 +423,18 @@ img {
 .arrow-wrapper {
     display: flex;
     align-items: center;
-    margin: 0 10%;
+    margin: 3% 10% 0;
 }
-/* .arrow-position {
-    position: relative;
-}
-.arrow-container {
-    position: absolute;
-    top: -211px;
-}
-.arrow-video-container {
-    position: absolute;
-    top: -211px;
-}
-.arrow {    
-    display: flex;
-}
-.fa-chevron-left {
-    position: absolute;
-    left: -3rem;
-}
-.fa-angle-right {
-    position: absolute;
-    left: 38rem;
-}
- */
 .nav:hover .tooltip {
     opacity: 1;
     visibility: visible;
+}
+.fa-chevron-left, .fa-angle-right {
+    display: block;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+
 }
 .tooltip {    
     position: absolute;
@@ -558,6 +542,12 @@ td {
         margin-top: 2%;
         width: 57%;
     }
+    .left.tooltip {
+        left: 27%;
+    }
+    .right.tooltip {
+        left: 72%;
+    }
     .work-first .fa-hand-pointer, .work-kanji .fa-hand-pointer {
         top: -357px;
         left: 78%;
@@ -590,10 +580,10 @@ td {
         width: 80%;
     }
     .left.tooltip {
-        left: 23%;
+        left: 18%;
     }
     .right.tooltip {
-        left: 76%;
+        left: 80%;
     }
     video {
         margin-bottom: -3%;
@@ -684,10 +674,6 @@ td {
         top: -30px;
         transform: rotate(357deg);
     }    
-    .nav {
-        position: absolute;
-        z-index: 15;
-    }
     .hand-position .fa-hand-pointer {
         right: 42%;
     }
@@ -697,18 +683,16 @@ td {
     video {
         margin-top: -1%;
     }
-    .left.tooltip {
-        left: -3rem;
+s    .sticky-s-green {
+        margin-top: 10%;
     }
 }
 /**700ｐｘ以下***************************/
 @media (max-width: 700px) {
+    /*ヘッダー付箋*/
     h1 {
         margin-top: -17%;
-    }
-    .h2-position {
-        width: 80%;
-    }
+    }    
     .sticky {
         width: 16rem;
     }
@@ -721,11 +705,19 @@ td {
     .stamp-s-position {
         top: 55%;
     }
+    /*メイン見出し*/
+    .h2-position {
+        width: 80%;
+    }
+    /*付箋+見出し*/
     .work-title {
         margin: 1% 15% 1%;
     }
     .work-first .fa-hand-pointer, .work-kanji .fa-hand-pointer {
         left: 76%;
+    }
+    .sticky-s-green {
+        margin-top: 3%;
     }
     nav.note {
         padding: 0 0 1%;    
@@ -734,6 +726,7 @@ td {
     video {
         margin-top: 0%;
     }
+    /*ハンバーガー*/
     nav.hamb {
         width: 40%;
     }
@@ -820,6 +813,7 @@ td {
     .pc.note {
         display: none;
     }
+    /*ヘッダー付箋*/
     .sticky-position {
         left: 1%;
         top: -13px;
@@ -840,15 +834,24 @@ td {
         top: -46%;
         left: -63%;
     }
+    /*画像*/
     img, video {
         height: 300px;
     }
+    /*クリックアイコン*/
     .hand-position .fa-hand-pointer {
         right: 38%;
         top: -22px;
     }
+    /*画像切り替えアイコン*/
     .arrow-position {
         margin-bottom: 8%;
+    }
+    .arrow-wrapper {
+        margin: 3% 10% -10%;
+    }
+    .left.tooltip {
+        left: 17%;
     }
     .work-title {
         font-size: 15px;
@@ -887,6 +890,7 @@ td {
     }
     video {
         margin-bottom: 1%;
+    /*ハンバーガー*/
     }
     .hamb-header {
         margin-top: 10%;
@@ -948,6 +952,7 @@ td {
 }
 /*400px以下*******************/
 @media (max-width: 400px) {
+    /*ヘッダー付箋*/
     .sticky-position {
         left: -37%;
         top: -8px;
@@ -964,12 +969,21 @@ td {
     .stamp-s-position {
         display: none;
     }
+    /*クリックアイコン*/
     .hand-position .fa-hand-pointer {
         right: 32%;
     }
     .repo-first .fa-hand-pointer, .repo-kanji .fa-hand-pointer, .repo-summarize .fa-hand-pointer {
         left: 16rem;
     }
+    /*画像切り替えアイコン*/
+    .left.tooltip {
+        left: 15%;
+    }
+    .right.tooltip {
+        left: 78%;
+    }
+    /*ハンバーガー*/
     nav.hamb {
         width: 60%;
     }

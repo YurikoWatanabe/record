@@ -140,7 +140,7 @@ nav.inner ul li a:hover {
     height: 100px;
     transform: rotate(7deg);
     top: 30%;
-    left: 2%;
+    left: -8%;
 }
 
 .stamp {
@@ -260,7 +260,7 @@ nav.inner ul li a:hover {
     line-height: 1.8;
     margin-top: 10%;
     margin-bottom: -25%;
-    margin-left: 76%;
+    margin-left: 64%;
 }
 /*見出し*/
 h1 {
@@ -304,6 +304,11 @@ h3 {
 }
 .consideration {
     margin-top: 3%;
+}
+/*本文*/
+p {
+    width: 80%;
+    margin: 0 auto;
 }
 /*下線*/
 .under_line {
@@ -457,26 +462,26 @@ img {
     left: 67%;
 }
   /*h2のクリックアイコン*/
-  .fa-hand-pointer, .fa-down-long {
+  .fa-hand-pointer, .fa-hand-pointer-work, .fa-hand-pointer-repo, .fa-down-long {
     color: #646262;
     font-size: 1.5em;
   } 
-  .hand-position {
+  .hand-position, .title-position {
     position: relative;
   }
   .hand-position .fa-hand-pointer {
     position: absolute;
     right: 45%;
-    top: -35px;
+    top: -89px;
     transform: rotate(340deg);
   }
-  .work-first .fa-hand-pointer, .work-kanji .fa-hand-pointer {
-    top: -368px;
-    right: 20%;
+  .title-position .fa-hand-pointer {
+    position: absolute;
+    top: 23px;    
   }
-  .repo-first .fa-hand-pointer, .repo-kanji .fa-hand-pointer, .repo-summarize .fa-hand-pointer {
-    top: -9px;
-    right: 38%;
+  .work-first .fa-hand-pointer, .work-kanji .fa-hand-pointer {
+    position: absolute;
+    top: -338px;
   }
   .video-wrapper {
     margin-top: 2%;
@@ -548,16 +553,15 @@ td {
     .right.tooltip {
         left: 72%;
     }
-    .work-first .fa-hand-pointer, .work-kanji .fa-hand-pointer {
-        top: -357px;
-        left: 78%;
-    }
     .hand-position .fa-hand-pointer {
-        right: 43%;
+        right: 44%;
+        top: -65px;
+    }
+    .repo-first .fa-hand-pointer, .repo-kanji .fa-hand-pointer, .repo-summarize .fa-hand-pointer {
+        top: 13px;
     }
     .repo-kanji .fa-hand-pointer, .repo-summarize .fa-hand-pointer {
-        left: 66%;
-        top: -1rem;
+        top: 9px;
     }
 }
 /**900ｐｘ以下***************************/
@@ -569,9 +573,11 @@ td {
     h2 {
         font-size: 30px;
     }
+    .hand-position .fa-hand-pointer {
+        right: 42%;
+    }
     .work-first .fa-hand-pointer, .work-kanji .fa-hand-pointer {
-        top: -464px;
-        left: 71%;
+        top: -436px;
     }
     img {
         height: 400px;
@@ -669,13 +675,31 @@ td {
         cursor: pointer;
     }
     /*共通*/
+    .sticky-position {
+        left: 2%;
+        top: -40px;
+    }
     .deg {
         left: -28%;
         top: -30px;
         transform: rotate(357deg);
     }    
+    .stamp-position {
+        left: -34%;
+    }
+    .sticky {
+        width: 16rem;
+        margin-left: 64%;
+    }
+    h1 {
+        margin-top: -17%;
+    }
     .hand-position .fa-hand-pointer {
-        right: 42%;
+        right: 41%;
+        top: -49px;
+    }
+    .repo-first .fa-hand-pointer, .repo-kanji .fa-hand-pointer, .repo-summarize .fa-hand-pointer {
+        top: 5%;
     }
     .video-wrapper {
         margin-top: 5%;
@@ -683,7 +707,7 @@ td {
     video {
         margin-top: -1%;
     }
-s    .sticky-s-green {
+   .sticky-s-green {
         margin-top: 10%;
     }
 }
@@ -692,9 +716,13 @@ s    .sticky-s-green {
     /*ヘッダー付箋*/
     h1 {
         margin-top: -17%;
-    }    
+    }   
+    .sticky-position {
+        left: 0%;
+    } 
     .sticky {
-        width: 16rem;
+        width: 15rem;
+        height: 6rem;
     }
     .stamp {
         opacity: 0;
@@ -703,7 +731,11 @@ s    .sticky-s-green {
         opacity: 1;
     }
     .stamp-s-position {
-        top: 55%;
+        top: 23%;
+        left: -11%;
+    }
+    h1 {
+        font-size: 53px;
     }
     /*メイン見出し*/
     .h2-position {
@@ -712,9 +744,6 @@ s    .sticky-s-green {
     /*付箋+見出し*/
     .work-title {
         margin: 1% 15% 1%;
-    }
-    .work-first .fa-hand-pointer, .work-kanji .fa-hand-pointer {
-        left: 76%;
     }
     .sticky-s-green {
         margin-top: 3%;
@@ -734,7 +763,7 @@ s    .sticky-s-green {
         font-size: 23px;
     }     
     .hand-position .fa-hand-pointer {
-        right: 41%;
+        right: 40%;
     }
 }
 /**645ｐｘ以下***************************/
@@ -833,11 +862,12 @@ s    .sticky-s-green {
     }
     .stamp-s-position {
         top: -46%;
-        left: -63%;
+        left: -74%;
     }
     /*画像*/
     img, video {
         height: 300px;
+        margin-top: 2%;
     }
     /*クリックアイコン*/
     .hand-position .fa-hand-pointer {
@@ -864,7 +894,7 @@ s    .sticky-s-green {
         font-size: 15px;
     }
     .repo-first .fa-hand-pointer, .repo-kanji .fa-hand-pointer, .repo-summarize .fa-hand-pointer {
-        left: 26rem;
+        left: 23rem;
         top: 0rem;
     }
     
@@ -888,7 +918,8 @@ s    .sticky-s-green {
         display: none;
     }    
     .work-first .fa-hand-pointer, .work-kanji .fa-hand-pointer {
-        top: -20rem;
+        top: -21rem;
+        left: 81%;
     }
     video {
         margin-bottom: 1%;
@@ -917,7 +948,7 @@ s    .sticky-s-green {
 /*500px以下*******************/
 @media (max-width: 500px) {
     .sticky-position {
-        left: -3%;
+        left: 6%;
         top: -3px;
     }
     .sticky {
@@ -927,11 +958,11 @@ s    .sticky-s-green {
     h1 {
         font-size: 23px;
         margin-top: -19%;
-        margin-left: 12%;
+        margin-left: 1%;
     }
     .stamp-s-position {
-        top: 1%;
-        left: -173%;
+        top: 6%;
+        left: -194%;
     }
     .work-title, .repo-title {
         font-size: 12px;
@@ -956,16 +987,20 @@ s    .sticky-s-green {
 @media (max-width: 400px) {
     /*ヘッダー付箋*/
     .sticky-position {
-        left: -37%;
+        left: -59%;
         top: -8px;
     }
     .sticky {
-        width: 11.5rem;
+        width: 10.5rem;
         height: 0;
+    }
+    .deg {
+        left: 10%;
+        top: -21px;
     }
     h1 {
         margin-top: -16%;
-        margin-left: 46%;
+        margin-left: 34%;
         font-size: 22px;
     }
     .stamp-s-position {

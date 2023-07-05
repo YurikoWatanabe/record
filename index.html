@@ -366,7 +366,7 @@
                     ここで本格的にコマンドを打ってはエラーの繰り返しと向き合うこととなりました。
                     サイトもどこに何が書いてあるのか分からず、慣れるまで苦労した記憶です。
                     間違えてmainブランチにいきなりpushしてしまわないだろうか？といった不安と闘いながら、
-                    手順の確認を必ず行い作業しました。
+                    手順の確認をこまめに行い作業しました。
                     </p><br>
                     <h4><span class="marker-yellow"><i class="fa-regular fa-comment-dots"></i>&nbsp;装飾について</span></h4>
                     <p>
@@ -408,7 +408,7 @@
                     </div> 
                     <div class="summarize_theme">
                         <div class="link-wrapper">
-                            <span class="work-title sticky-s-white">「JavaScriptおさらい」<span class="new-line"><br></span>画像&emsp;<i class="fa-solid fa-down-long"></i></span>
+                            <span class="work-title sticky-s-white">「myportfolio」<br>（JavaScriptおさらい）<span class="new-line"><br></span>画像&emsp;<i class="fa-solid fa-down-long"></i></span>
                             <img id="main_summarize_image" src="img/summarize_top1.png" alt="JavaScriptおさらいのイメージ画像">
                             <!--画像ページ切り替え-->
                             <div class="arrow-position summarize">
@@ -427,12 +427,12 @@
                             </div>
                         </div>
                         <div class="link-wrapper video-wrapper">
-                            <span class="work-title sticky-s-white">「JavaScriptおさらい」<span class="new-line"><br></span>動画&emsp;<i class="fa-solid fa-down-long"></i></span>
+                            <span class="work-title sticky-s-white">「myportfolio」<br>（JavaScriptおさらい）<span class="new-line"><br></span>動画&emsp;<i class="fa-solid fa-down-long"></i></span>
                             <video src="sammarize_video.mp4" width="630" height="360" controls></video>
                         </div>
                     </div>
                     <!--リポジトリへのリンク-->
-                    <a class="repository summarize sticky-s-green" href="https://github.com/BPkuma/myportfolio" target="_blank" rel="noopener noreferrer"><span class="repo-title">「JavaScriptおさらい」<span class="new-line"><br></span>リポジトリ</span></a>
+                    <a class="repository summarize sticky-s-green" href="https://github.com/BPkuma/myportfolio" target="_blank" rel="noopener noreferrer"><span class="repo-title">「myportfolio」<span class="new-line"><br></span>リポジトリ</span></a>
                     <div class="title-position repo-summarize">
                         <i class="fa-regular fa-hand-pointer"></i>
                     </div>
@@ -457,6 +457,10 @@
                             <tr>
                                 <th>フレームワーク</th>
                                 <td>Laravel10</td>
+                            </tr>
+                            <tr>
+                                <th>ライブラリ</th>
+                                <td>prism.js</td>
                             </tr>
                             <tr>
                                 <th>ポイント</th>
@@ -490,16 +494,101 @@
                 <div class="hand-position con summarize">
                     <i class="fa-regular fa-hand-pointer"></i>
                 </div>
-                <p id="consideration_text3" class="consideration_text note first-letter-spacing hidden">
-                    同じチームメイトでの開発第二弾。今度はDocker環境でLaravelを使ってみようという話に。
-                    Laravelは、授業で一度サンプルを真似たアプリを作りましたが、正直よく分からない状態でした。
-                    その際の環境はAWSでしたので、Dockerは未知の世界。
-                    <br>トップページはチームメイト共通で使用し、リンク先からはそれぞれ作りたいものを開発していこう、という方向になりました。
-                    自由課題での反省を踏まえ、不完全なままだったサイトを完成させることを目標としました。
-                    まずは最低限の雛型を完成させること。のちのちはDBを使ってレベル制度導入などしたいと思っています。
-                    雛型はなんとか完成しましたが、デプロイのやり方などはまだ勉強できていないため、
-                    デモ動画をご覧いただければ幸いです。
-                </p>
+                <div id="consideration_text3" class="consideration_text note first-letter-spacing hidden">
+                    <h4><span class="marker-yellow"><i class="fa-regular fa-comment-dots"></i>&nbsp;Laravel10について</span></h4>
+                    <p>
+                    授業（AWS環境のLaravel6）ではあまり理解できていなかったため、基本を再度確認しながらのスタートとなりました。
+                    Controllerとviewの簡単な関係の確認からはじめ、6では登場しなかったTailwindの使い方、
+                    CSSファイル、jsファイルの格納場所、それらを読み込ませる場所など、
+                    やりたいことに応じて必要なものを調べていく過程でようやく理解の入り口に立てた気がします。
+                    </p><br>
+                    <h4><span class="marker-yellow"><i class="fa-regular fa-comment-dots"></i>&nbsp;Tailwindについて</span></h4>
+                    <p>
+                    CSSにようやく慣れた私にとって、Tailwindの便利さはまだあまり理解できていません。
+                    しかし、簡単な指定（hiddenやabsoluteなど）は手軽で良いなと思います。
+                    今後、うまく使い分けできるようにしていきたいと考えています。
+                    </p><br>
+                    <h4><span class="marker-yellow"><i class="fa-regular fa-comment-dots"></i>&nbsp;DBについて</span></h4>
+                    <p>
+                    Laravel同様、授業ではいまいち理解できなかったため、この機会にいろいろな使い方にチャレンジしたい
+                    と思い、まずはキャラクターのセリフを格納し、表示の際にカラムでコントロールできるようにしました。
+                    授業で習ったのは、ユーザーが入力したデータを保存→検索したり並べ替えたりする、というフローのみ。
+                    セリフをあらかじめ用意するパターンはどうするのが正解か不明ながら、シーダーファイルに保存という方法で
+                    実装できました。
+                    </p><br>
+                    <h4><span class="marker-yellow"><i class="fa-regular fa-comment-dots"></i>&nbsp;cssファイル、jsファイルについて</span></h4>
+                    <p>
+                    以前までは、jsファイルは</body>の直前に書いていたので問題ありませんでしたが、
+                    今回は<head>タグ（layoutsディレクトリ内app.blade.phpファイル）に書いたせいか、エラーが頻発することに気づきました。
+                    要素が存在したら～というif文で対応する必要があることを学びました。
+                    また、チーム開発のことを考えると、テンプレートファイルにcssファイル、jsファイルを読み込ませた場合、名前衝突の危険もあることに
+                    最近気づきました。
+                    この点に関しては、厳格な命名規則か、ファイルを分けるなどの対策が必要だと話し合っていたところです。
+                    </p><br>
+                    <h4><span class="marker-yellow"><i class="fa-regular fa-lightbulb"></i>&nbsp;やってみたかったこと</span></h4>                   
+                    <h5>ドラクエっぽい世界観</h5>
+                        <p>
+                        黒の背景に白の文字列、それを囲む白い枠線と、ベースはとても簡単にできました。
+                        メイン画面はクリックでどんどんセリフが変わっていくので、ページ遷移はありません。
+                        そのため、枠線やキャラクターの配置を決めるのに苦労しました。
+                        </p><br>
+                    <h5>ドット絵のキャラクターを動かす</h5>
+                        <p>
+                        セリフが表示される枠線の上にキャラクターを表示させ、よりゲームっぽい世界観にできたと思います。
+                        豊富なキャラクター素材のおかげで、setIntervalメソッドを使って
+                        アニメーションぽく表示することもできました。素材はクラスメイトから提供していただきました。                            
+                        </p><br>
+                    <h5>DBを使ってセリフ表示</h5>
+                    <p>
+                    テーブル名：Dialogues<br>
+                    orderカラム：セリフの順番を表す整数<br>
+                    talkカラム：セリフの内容<br>
+                    flagカラム：特定のセリフに目印<br>                    
+                    上記テーブルを作成し、クリックイベントでorderカラムを順番に表示、特定のflagが
+                    出現したら特定の動作を指定する、という仕様にしました。                            
+                    </p><br>
+                    <h5>「はい」「いいえ」ボタン</h5>
+                    <p>
+                    機能的とは言えませんが、遊び心で実装。「いいえ」を選択すると、「はい」を選択するまで無限ループに陥るドラクエ特有
+                    の現象を、foever関数（固定のセリフに書き換え後、同じセリフを再度表示させる）を作って再現しました。                          
+                    </p><br>
+                    <h5>「もどる」ボタン</h5>
+                    <p>
+                    チームメイトから「あった方がよい」とアドバイスされた機能です。
+                    前作「こんな漢字」でも似たような機能について考え、かなり試行錯誤した挙句ボツになったため、
+                    余裕ができたら作ろう、くらいに考えていました。
+                    しかし、今回のアプリに関してはやはりあった方が便利だと感じたため着手。
+                    当初、flagによって簡単にコントロールできるかなと思いましたが、一筋縄ではいきませんでした。
+                    以下は特に手こずった点です。<br>
+                    ・画像表示に使用しているsetIntervalを実行する際に返されるIDを使って停止処理をする際、「もどる」ボタンを押すと
+                    何故か複数に増える<br>
+                    →配列として対応<br>
+                    ・「はい」「いいえ」ボタンが表示されているときに「もどる」ボタンを押すと、「はい」「いいえ」ボタンが表示しっぱなして前のセリフに戻ってしまう<br>
+                    →全体的な流れの箇所以外に、はい、いいえに関する流れの箇所にも「もどる」機能のコードを書く必要があることに気づく <br>                        
+                    </p><br>
+                    <h5>レスポンシブデザイン</h5>
+                    <p>
+                    スマホでも快適に見えるデザインにしたかったため、
+                    はい、いいえボタンの小さいサイズを作成。
+                    また、コードの位置をセリフの下に表示させるようにしていましたが、見づらいと感じたため、
+                    右側に表示させるように変更。                        
+                    </p><br>
+                    <h4><span class="marker-yellow"><i class="fa-regular fa-lightbulb"></i>&nbsp;今後やりたいこと</span></h4>                   
+                    <h5>経験値、レベル制の導入</h5>
+                    <p>
+                    テーブルを使ってユーザー情報を管理し、進行に応じて経験値、レベルが増える機能を実装したいです。
+                    これが実現するころには、曖昧なテーブル、DBへの理解が深まるかなと考えています。
+                    </p><br>
+                    <h5>コンテンツ追加</h5>
+                    <p>
+                    「JavaScript学んだことまとめ」で中途半端になってしまったコンテンツの内容や、新たに学習した内容など、
+                    コンテンツを充実させ、レベル上げ甲斐のあるアプリにしていきたいです。
+                    </p><br>
+                    <h5>インターネット公開</h5>
+                    <p>
+                    デプロイについてしっかり勉強し、いろいろな方に使ってもらってフィードバックいただける
+                    環境に持っていきたいと考えています。
+                    </p>                 
             </div>
         </div>
         <div class="container">

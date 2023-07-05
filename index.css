@@ -130,7 +130,7 @@ nav.inner ul li a:hover {
     transform: rotate(3deg);
 }
 
-.paper.summ::after {
+.paper.summ::before {
     display: none;
 }
 
@@ -804,6 +804,13 @@ td {
     .stamp-s-position {
         top: -46%;
         left: -74%;
+    }
+    /*ルーズリーフ*/
+    .paper {
+        padding: 1% 1% 1% 1%;
+    }
+    .paper::before {
+        display: none;
     }
     /*画像*/
     img, video {

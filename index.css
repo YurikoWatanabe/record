@@ -21,10 +21,6 @@ body {
 .marker-yellow {
     background: linear-gradient(transparent 60%, #f5f545 60%);
 }
-/* .marker-pink {
-    background: linear-gradient(transparent 60%, #febdbd 60%);
-} */
-
 /*ヘッダー*/
 header {
     margin-bottom: -5%;
@@ -311,7 +307,7 @@ h3, h4 {
 }
 h5 {
     font-size: 17px;
-    color: rgba(5, 5, 126);
+    color: rgb(248, 86, 86);
 }
 .consideration {
     margin-top: 3%;
@@ -530,6 +526,19 @@ td {
 }
 .first-letter-spacing::first-letter {
     margin-left: 1em;
+}
+/*考察*/
+.code-link {
+    text-decoration: underline;
+    color: rgb(47 127 141);
+    margin-right: 10%;
+}
+.code-link.text {
+    margin-right: 0;
+}
+.branch-link {
+    text-decoration: underline;
+    color: rgb(47 127 141);
 }
 
 
@@ -871,7 +880,7 @@ td {
         display: none;
     }    
     .work-first .fa-hand-pointer, .work-kanji .fa-hand-pointer {
-        top: -21rem;
+        top: -17rem;
         left: 81%;
     }
     /*ハンバーガー*/    
@@ -962,6 +971,9 @@ td {
     }
     h2 {
         font-size: 20px;
+    }
+    h5 {
+        font-size: 16px;
     }
     /*クリックアイコン*/
     .hand-position .fa-hand-pointer {

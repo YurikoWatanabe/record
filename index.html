@@ -239,7 +239,7 @@
                     <p>
                     驚いたのは、予想より長い記述が必要なこと。
                     「
-                    <a href="https://github.com/YurikoWatanabe/git_test/blob/master/index.css#L216" target="_blank" rel="noopener noreferrer" class="code-link text">キャラ画像 + 左吹き出し</a>」、
+                    <a href="https://github.com/YurikoWatanabe/git_test/blob/master/index.html#L34" target="_blank" rel="noopener noreferrer" class="code-link text">キャラ画像 + 左吹き出し</a>」、
                     「
                     <a href="https://github.com/YurikoWatanabe/git_test/blob/master/01_countdown/countdown.html#L52" target="_blank" rel="noopener noreferrer" class="code-link text">キャラ画像 + 右吹き出し</a>」
                     といったブロックを作成後は自由に配置できたので楽でした。
@@ -252,7 +252,7 @@
                     いろいろなやり方があり迷子になりかけました。
                     <a href="https://github.com/YurikoWatanabe/git_test/blob/master/index.html#L13" target="_blank" rel="noopener noreferrer" class="code-link text">&lt;span&gt;タグを3つ</a>
                     並べる方法が
-                    一番シンプルに理解できそうだったので採用。CSSの奥深さを再認識しました。
+                    一番シンプルに理解できそうだったので採用。
                     </p>
                     <a href="https://github.com/YurikoWatanabe/git_test/blob/master/index.css#L83" target="_blank" rel="noopener noreferrer" class="code-link">CSSのコードを見る&nbsp;</a>
                     <a href="https://github.com/YurikoWatanabe/git_test/blob/master/index.js" target="_blank" rel="noopener noreferrer" class="code-link">JavaScriptのコードを見る&nbsp;</a>
@@ -260,7 +260,7 @@
                     <h5>アコーディオンメニュー</h5>
                     <p>   
                     「
-                    <a href="https://github.com/YurikoWatanabe/git_test/blob/master/01_countdown/countdown.html#L148" target="_blank" rel="noopener noreferrer" class="code-link text">クリックでOPEN</a>
+                    <a href="https://github.com/YurikoWatanabe/git_test/blob/master/01_countdown/countdown.html#L150" target="_blank" rel="noopener noreferrer" class="code-link text">クリックでOPEN</a>
                     」という箇所がクリックされたらコンテンツを展開させ、かつ文字列も「クリックでCLOSE」へと変化させるために
                     <a href="https://github.com/YurikoWatanabe/git_test/blob/master/01_countdown/countdown.js#L58" target="_blank" rel="noopener noreferrer" class="code-link text">if文で条件分岐。</a>
                     バッククォートを使って文字列を書き換えました。
@@ -269,10 +269,10 @@
                     <h5>コードを見やすく表示</h5>
                     <p>
                     極力シンプルに、かつ見やすく、を目指しました。一部長くなるコードのみ行数を表示させたい、
-                    という段階でPrism.jsが使いやすいと感じました。
+                    などの処理も、Prism.jsで簡単にできました。
                     ただ、&lt;pre&gt;タグで囲んだコードを左寄せにする方法が分からず、力技で対応。
                     <a href="https://github.com/YurikoWatanabe/git_test/blob/master/01_countdown/countdown.html#L245" target="_blank" rel="noopener noreferrer" class="code-link text">コード</a>
-                    を左寄せに。<br>
+                    を物理的に左寄せで記述。<br>
                     ※後に別作品で再度使用する際に調べ直したところ、Prism.jsのデフォルトのスタイルシートであるprism.cssと同じセレクタ名を、
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/css/summarize.css#L97" target="_blank" rel="noopener noreferrer" class="code-link text">自作のCSSファイル</a>
                     内で指定、新しいスタイルを追加することで適用可能なことが分かりました。
@@ -375,7 +375,7 @@
                     </p><br>
                     <h4><span class="marker-yellow"><i class="fa-regular fa-comment-dots"></i>&nbsp;GitHubについて</span></h4>
                     <p>
-                    前作でなんとかインターネット公開まではできたものの、基本的な使い方をほぼ理解できていなかったため、
+                    前作では、なんとかインターネット公開まではできたものの、基本的な使い方をほぼ理解できていなかったため、
                     ここで本格的にコマンドを打ってはエラーの繰り返しと向き合うこととなりました。
                     サイトもどこに何が書いてあるのか分からず、慣れるまで苦労した記憶です。
                     間違えてmainブランチにいきなりpushしてしまわないだろうか？といった不安と闘いながら、
@@ -387,9 +387,9 @@
                     <a href="https://github.com/BPkuma/KonnaKanji/blob/main/%E3%81%93%E3%82%93%E3%81%AA%E6%BC%A2%E5%AD%97App.pdf" target="_blank" rel="noopener noreferrer" class="code-link text">設計書</a>
                     は、当時の自分には発想できないような内容でした。
                     ウェブサイトのようにクリックすると別のページに遷移する、というものではなく、1画面ですべて解決する仕様です。
-                    これはJavaScriptの出番だなと思いました。
-                    <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L365" target="_blank" rel="noopener noreferrer" class="code-link text">クリックイベントでhiddenを付け外し</a>
-                    する方法が大活躍しました。
+                    これはJavaScriptの出番だなと思いました。トップ画面から自動でメイン画面に切り替わる動きでは、
+                    <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L365" target="_blank" rel="noopener noreferrer" class="code-link text">イベントでhiddenを付け外し</a>
+                    する方法で思い通りに実現できました。
                     </p>
                     <br><br>
 
@@ -565,9 +565,7 @@
                     <p>
                     黒の背景に白の文字列、それを囲む白い枠線と、ベースはとても簡単にできました。
                     メイン画面はクリックでどんどんセリフが変わっていくので、ページ遷移はありません。
-                    そのため、枠線やキャラクターの
-                    <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/views/summarize/countdown.blade.php" target="_blank" rel="noopener noreferrer" class="code-link text">配置</a>
-                    を決めるのに苦労しました。
+                    そのため、枠線やキャラクターの配置を決めるのに苦労しました。
                     </p>
                     <br>
                     <h5>ドット絵のキャラクターを動かす</h5>
@@ -580,10 +578,10 @@
                     <br>
                     <h5>DBを使ってセリフ表示</h5>
                     <p>
-                    テーブル名：Dialogues<br>
+                    テーブル名&nbsp;：Dialogues<br>
                     orderカラム：セリフの順番を表す整数<br>
-                    talkカラム：セリフの内容<br>
-                    flagカラム：特定のセリフに目印<br>                    
+                    talkカラム&nbsp;&nbsp;：セリフの内容<br>
+                    flagカラム&nbsp;&nbsp;：特定のセリフに目印<br>                    
                     上記テーブルを作成し、クリックイベントでtalkカラムを順番に表示、
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L249" target="_blank" rel="noopener noreferrer" class="code-link text">特定のflagが出現したら特定の動作を指定</a>
                     する、という仕様にしました。                            
@@ -613,14 +611,14 @@
                     →
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L410" target="_blank" rel="noopener noreferrer" class="code-link text">全体的な流れの箇所</a>
                     以外に、
-                    <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L410" target="_blank" rel="noopener noreferrer" class="code-link text">「はい」「いいえ」ボタンに関する流れの箇所</a>
+                    <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L606" target="_blank" rel="noopener noreferrer" class="code-link text">「はい」「いいえ」ボタンに関する流れの箇所</a>
                     にも「もどる」機能のコードを書く必要があることに気づく                       
                     </p><br>
                     <h5>レスポンシブデザイン</h5>
                     <p>
                     スマホでも快適に見えるデザインにしたかったため、
-                    「はい」「いいえ」ボタンの
-                    <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L410" target="_blank" rel="noopener noreferrer" class="code-link text">小さいサイズ</a>
+                    小さい画面用の
+                    <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/views/summarize/countdown.blade.php#L8" target="_blank" rel="noopener noreferrer" class="code-link text">「はい」「いいえ」ボタン</a>
                     を作成。
                     また、コードの位置をセリフの下に表示させるようにしていましたが、見づらいと感じたため、
                     右側に表示させるように変更。                        

@@ -239,7 +239,7 @@
                     <p>
                     驚いたのは、予想より長い記述が必要なこと。
                     「
-                    <a href="https://github.com/YurikoWatanabe/git_test/blob/master/index.css#L216" target="_blank" rel="noopener noreferrer" class="code-link text">キャラ画像 + 左吹き出し</a>」、
+                    <a href="https://github.com/YurikoWatanabe/git_test/blob/master/index.html#L34" target="_blank" rel="noopener noreferrer" class="code-link text">キャラ画像 + 左吹き出し</a>」、
                     「
                     <a href="https://github.com/YurikoWatanabe/git_test/blob/master/01_countdown/countdown.html#L52" target="_blank" rel="noopener noreferrer" class="code-link text">キャラ画像 + 右吹き出し</a>」
                     といったブロックを作成後は自由に配置できたので楽でした。
@@ -252,7 +252,7 @@
                     いろいろなやり方があり迷子になりかけました。
                     <a href="https://github.com/YurikoWatanabe/git_test/blob/master/index.html#L13" target="_blank" rel="noopener noreferrer" class="code-link text">&lt;span&gt;タグを3つ</a>
                     並べる方法が
-                    一番シンプルに理解できそうだったので採用。CSSの奥深さを再認識しました。
+                    一番シンプルに理解できそうだったので採用。
                     </p>
                     <a href="https://github.com/YurikoWatanabe/git_test/blob/master/index.css#L83" target="_blank" rel="noopener noreferrer" class="code-link">CSSのコードを見る&nbsp;</a>
                     <a href="https://github.com/YurikoWatanabe/git_test/blob/master/index.js" target="_blank" rel="noopener noreferrer" class="code-link">JavaScriptのコードを見る&nbsp;</a>
@@ -260,7 +260,7 @@
                     <h5>アコーディオンメニュー</h5>
                     <p>   
                     「
-                    <a href="https://github.com/YurikoWatanabe/git_test/blob/master/01_countdown/countdown.html#L148" target="_blank" rel="noopener noreferrer" class="code-link text">クリックでOPEN</a>
+                    <a href="https://github.com/YurikoWatanabe/git_test/blob/master/01_countdown/countdown.html#L150" target="_blank" rel="noopener noreferrer" class="code-link text">クリックでOPEN</a>
                     」という箇所がクリックされたらコンテンツを展開させ、かつ文字列も「クリックでCLOSE」へと変化させるために
                     <a href="https://github.com/YurikoWatanabe/git_test/blob/master/01_countdown/countdown.js#L58" target="_blank" rel="noopener noreferrer" class="code-link text">if文で条件分岐。</a>
                     バッククォートを使って文字列を書き換えました。
@@ -269,10 +269,10 @@
                     <h5>コードを見やすく表示</h5>
                     <p>
                     極力シンプルに、かつ見やすく、を目指しました。一部長くなるコードのみ行数を表示させたい、
-                    という段階でPrism.jsが使いやすいと感じました。
+                    などの処理も、Prism.jsで簡単にできました。
                     ただ、&lt;pre&gt;タグで囲んだコードを左寄せにする方法が分からず、力技で対応。
                     <a href="https://github.com/YurikoWatanabe/git_test/blob/master/01_countdown/countdown.html#L245" target="_blank" rel="noopener noreferrer" class="code-link text">コード</a>
-                    を左寄せに。<br>
+                    を物理的に左寄せで記述。<br>
                     ※後に別作品で再度使用する際に調べ直したところ、Prism.jsのデフォルトのスタイルシートであるprism.cssと同じセレクタ名を、
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/css/summarize.css#L97" target="_blank" rel="noopener noreferrer" class="code-link text">自作のCSSファイル</a>
                     内で指定、新しいスタイルを追加することで適用可能なことが分かりました。
@@ -375,7 +375,7 @@
                     </p><br>
                     <h4><span class="marker-yellow"><i class="fa-regular fa-comment-dots"></i>&nbsp;GitHubについて</span></h4>
                     <p>
-                    前作でなんとかインターネット公開まではできたものの、基本的な使い方をほぼ理解できていなかったため、
+                    前作では、なんとかインターネット公開まではできたものの、基本的な使い方をほぼ理解できていなかったため、
                     ここで本格的にコマンドを打ってはエラーの繰り返しと向き合うこととなりました。
                     サイトもどこに何が書いてあるのか分からず、慣れるまで苦労した記憶です。
                     間違えてmainブランチにいきなりpushしてしまわないだろうか？といった不安と闘いながら、
@@ -387,27 +387,27 @@
                     <a href="https://github.com/BPkuma/KonnaKanji/blob/main/%E3%81%93%E3%82%93%E3%81%AA%E6%BC%A2%E5%AD%97App.pdf" target="_blank" rel="noopener noreferrer" class="code-link text">設計書</a>
                     は、当時の自分には発想できないような内容でした。
                     ウェブサイトのようにクリックすると別のページに遷移する、というものではなく、1画面ですべて解決する仕様です。
-                    これはJavaScriptの出番だなと思いました。
-                    <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L365" target="_blank" rel="noopener noreferrer" class="code-link text">クリックイベントでhiddenを付け外し</a>
-                    する方法が大活躍しました。
+                    これはJavaScriptの出番だなと思いました。トップ画面から自動でメイン画面に切り替わる動きについては、
+                    <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L374C3-L374C135" target="_blank" rel="noopener noreferrer" class="code-link text">setTimeout() メソッド</a>
+                    でhidden付け外しのタイミングをコントロールすることにより実装。
                     </p>
-                    <br><br>
+                    <br>
 
                     <h4><span class="marker-yellow"><i class="fa-regular fa-comment-dots"></i>&nbsp;ロジックについて</span></h4>
                     <p>
                     打合せの段階で、版画のように表示させる、という方針は決まっていたのですが、実際にどのようにコードを組んだらよいのか、
                     私にはイメージできていませんでした。
                     チームメートのコードを読み解くことで、なるほどと勉強になりました。
-                    まずは素材をオブジェクトとして配列に格納。そこからランダムに質問を表示、回答によって選択されたオブジェクト内の画像パスを
-                    所定の場所に書き加え、文字を表示させるというものです。
+                    まずは素材をオブジェクトとして配列に格納。そこからランダムに質問を表示、回答によって選択されたオブジェクト内の2つの画像パスを
+                    所定の場所に書き換えて合体させ、新しい漢字を表示させるというものです。
                     </p>
-                    <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L1" target="_blank" rel="noopener noreferrer" class="code-link">JavaScriptのコードを見る&nbsp;</a>
+                    <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L2" target="_blank" rel="noopener noreferrer" class="code-link">JavaScriptのコードを見る&nbsp;</a>
                     <br><br>
                     <h4><span class="marker-yellow"><i class="fa-regular fa-comment-dots"></i>&nbsp;スクショ機能について</span></h4>
                     <p>
                     <a href="https://github.com/BPkuma/KonnaKanji/blob/main/%E3%81%93%E3%82%93%E3%81%AA%E6%BC%A2%E5%AD%97App.pdf" target="_blank" rel="noopener noreferrer" class="code-link text">設計書</a>
-                    には、生成された漢字をダウンロードして保存できる、という機能が盛り込まれていました。
-                    今回採用しされたロジックで生成されることになる画像は、格納済みの異なる画像を2つ選択、組み合わせて表示させているため、
+                    には、生成した漢字をダウンロードして保存できる、という機能が盛り込まれていました。
+                    今回採用されたロジックで生成されることになる画像は、格納済みの異なる画像を2つ選択、組み合わせて表示させているため、
                     画面のスクリーンショットを撮ってダウンロード可能なhtml2camvasが使えそうだと思い、
                     <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L391" target="_blank" rel="noopener noreferrer" class="code-link text">実装</a>
                     に至りました。
@@ -420,10 +420,11 @@
                     には、Back、Nextボタンがあったため、以下のような
                     <a href="https://github.com/BPkuma/KonnaKanji/blob/memorial/js/main.js#L176" target="_blank" rel="noopener noreferrer" class="code-link text">コード</a>
                     を組みました。<br>
+                    回答済みの質問・・・配列に保存<br>
                     Backボタンが押された場合・・・回答済みの質問と答えを表示<br>
                     Nextボタンが押された場合・・・新たに質問をランダムに選択<br>
-                    一方、「質問と回答をランダムに表示する機能」から「最初の質問の回答によって2問目以降の質問の種類が限定される機能」へ
-                    改善されたことも重なり、上記コードではうまく動かないことが発覚。
+                    上記コードでは、既存のアルゴリズム（最初に回答された内容によって次の質問が選択される）との相性が悪く、
+                    うまく動きません。
                     さらに、「直感で答えていく」というアプリの趣旨を考えるとBack、Nextボタン自体が不要ではないか？という結論に至り不採用に。
                     チーム間のコミュニケーション不足が招いた結果となりました。
                     このコードに関しては、反省の念を込めて<a class="branch-link" href="https://github.com/BPkuma/KonnaKanji/blob/memorial/js/main.js" target="_blank" rel="noopener noreferrer">「memorialブランチ」</a>として残しています。
@@ -514,7 +515,7 @@
                     その際の環境はAWSでしたので、Dockerは未知の世界。
                     <br>トップページはチームメート共通で使用し、リンク先からはそれぞれ作りたいものを開発していこう、という方向になりました。
                     自由課題での反省を踏まえ、不完全なままだったサイトを完成させることを目標としました。
-                    まずは最低限の雛型を完成させること。のちのちはDBを使ってレベル制度導入などしたいと思っています。
+                    まずは最低限の雛型を完成させること。のちのちはDBを使ってレベルシステムの導入などしたいと思っています。
                     雛型はなんとか完成しましたが、デプロイのやり方などはまだ勉強できていないため、
                     デモ動画をご覧いただければ幸いです。
                 </p>
@@ -539,7 +540,7 @@
                     <h4><span class="marker-yellow"><i class="fa-regular fa-comment-dots"></i>&nbsp;DBについて</span></h4>
                     <p>
                     Laravel同様、授業ではいまいち理解できなかったため、この機会にいろいろな使い方にチャレンジしたい
-                    と思い、まずはキャラクターのセリフを格納。表示の際にカラムでコントロールできるようにしました。
+                    と思い、まずはキャラクターのセリフを格納するテーブルを作成。表示の際にカラムでコントロールできるようにしました。
                     授業で習ったのは、ユーザーが入力したデータを保存→検索したり並べ替えたりする、というフローのみ。
                     セリフをあらかじめ用意するパターンはどうするのが正解なのか不明ながら、
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/database/seeders/DialogueSeeder.php#L10" target="_blank" rel="noopener noreferrer" class="code-link text">Seederファイル</a>
@@ -553,7 +554,7 @@
                     以前までは、jsファイルを&lt;/body&gt;タグの直前に書いていたので問題ありませんでしたが、
                     今回は&lt;head&gt;タグ（
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/views/layouts/app.blade.php#L16" target="_blank" rel="noopener noreferrer" class="code-link text">layoutsディレクトリ内app.blade.phpファイル</a>
-                    ）に書いたせいか、エラーが頻発することに気づきました。
+                    ）に書いたせいか、コンソールエラーが頻発することに気づきました。
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L33" target="_blank" rel="noopener noreferrer" class="code-link text">要素が存在したら～というif文</a>
                     で対応する必要があることを知りました。<br>
                     また、チーム開発のことを考えると、テンプレートファイルにcssファイル、jsファイルを読み込ませた場合、名前衝突の危険もあることに
@@ -565,9 +566,7 @@
                     <p>
                     黒の背景に白の文字列、それを囲む白い枠線と、ベースはとても簡単にできました。
                     メイン画面はクリックでどんどんセリフが変わっていくので、ページ遷移はありません。
-                    そのため、枠線やキャラクターの
-                    <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/views/summarize/countdown.blade.php" target="_blank" rel="noopener noreferrer" class="code-link text">配置</a>
-                    を決めるのに苦労しました。
+                    そのため、枠線やキャラクターの配置を決めるのに苦労しました。
                     </p>
                     <br>
                     <h5>ドット絵のキャラクターを動かす</h5>
@@ -580,10 +579,10 @@
                     <br>
                     <h5>DBを使ってセリフ表示</h5>
                     <p>
-                    テーブル名：Dialogues<br>
+                    テーブル名&nbsp;：Dialogues<br>
                     orderカラム：セリフの順番を表す整数<br>
-                    talkカラム：セリフの内容<br>
-                    flagカラム：特定のセリフに目印<br>                    
+                    talkカラム&nbsp;&nbsp;：セリフの内容<br>
+                    flagカラム&nbsp;&nbsp;：特定のセリフに目印<br>                    
                     上記テーブルを作成し、クリックイベントでtalkカラムを順番に表示、
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L249" target="_blank" rel="noopener noreferrer" class="code-link text">特定のflagが出現したら特定の動作を指定</a>
                     する、という仕様にしました。                            
@@ -613,20 +612,20 @@
                     →
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L410" target="_blank" rel="noopener noreferrer" class="code-link text">全体的な流れの箇所</a>
                     以外に、
-                    <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L410" target="_blank" rel="noopener noreferrer" class="code-link text">「はい」「いいえ」ボタンに関する流れの箇所</a>
+                    <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L606" target="_blank" rel="noopener noreferrer" class="code-link text">「はい」「いいえ」ボタンに関する流れの箇所</a>
                     にも「もどる」機能のコードを書く必要があることに気づく                       
                     </p><br>
                     <h5>レスポンシブデザイン</h5>
                     <p>
                     スマホでも快適に見えるデザインにしたかったため、
-                    「はい」「いいえ」ボタンの
-                    <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L410" target="_blank" rel="noopener noreferrer" class="code-link text">小さいサイズ</a>
+                    小さい画面用の
+                    <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/views/summarize/countdown.blade.php#L8" target="_blank" rel="noopener noreferrer" class="code-link text">「はい」「いいえ」ボタン</a>
                     を作成。
-                    また、コードの位置をセリフの下に表示させるようにしていましたが、見づらいと感じたため、
+                    また、解説用コードの位置をセリフの下に表示させるようにしていましたが、見づらいと感じたため、
                     右側に表示させるように変更。                        
                     </p><br>
                     <h4><span class="marker-yellow"><i class="fa-regular fa-lightbulb"></i>&nbsp;今後やりたいこと</span></h4>                   
-                    <h5>経験値、レベル制の導入</h5>
+                    <h5>経験値、レベルシステムの導入</h5>
                     <p>
                     テーブルを使ってユーザー情報を管理し、進行に応じて経験値、レベルが増える機能を実装したいです。
                     これが実現するころには、曖昧なテーブル、DBへの理解が深まるかなと考えています。
@@ -634,7 +633,7 @@
                     <h5>コンテンツ追加</h5>
                     <p>
                     「JavaScript学んだことまとめ」で中途半端になってしまったコンテンツの内容や、新たに学習した内容など、
-                    コンテンツを充実させ、レベル上げ甲斐のあるアプリにしていきたいです。
+                    コンテンツを充実させ、レベルシステムが活きるアプリにしていきたいです。
                     </p><br>
                     <h5>インターネット公開</h5>
                     <p>

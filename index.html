@@ -254,7 +254,7 @@
                     並べる方法が
                     一番シンプルに理解できそうだったので採用。
                     </p>
-                    <a href="https://github.com/YurikoWatanabe/git_test/blob/master/index.css#L83" target="_blank" rel="noopener noreferrer" class="code-link">CSSのコードを見る&nbsp;</a>
+                    <a href="https://github.com/YurikoWatanabe/git_test/blob/master/index.css#L83" target="_blank" rel="noopener noreferrer" class="code-link">CSSのコードを見る&nbsp;</a><br>
                     <a href="https://github.com/YurikoWatanabe/git_test/blob/master/index.js" target="_blank" rel="noopener noreferrer" class="code-link">JavaScriptのコードを見る&nbsp;</a>
                     <br><br>
                     <h5>アコーディオンメニュー</h5>
@@ -419,12 +419,12 @@
                     <a href="https://github.com/BPkuma/KonnaKanji/blob/main/%E3%81%93%E3%82%93%E3%81%AA%E6%BC%A2%E5%AD%97App.pdf" target="_blank" rel="noopener noreferrer" class="code-link text">設計書</a>
                     には、Back、Nextボタンがあったため、以下のような
                     <a href="https://github.com/BPkuma/KonnaKanji/blob/memorial/js/main.js#L176" target="_blank" rel="noopener noreferrer" class="code-link text">コード</a>
-                    を組みました。<br>
-                    回答済みの質問・・・配列に保存<br>
-                    Backボタンが押された場合・・・回答済みの質問と答えを表示<br>
-                    Nextボタンが押された場合・・・新たに質問をランダムに選択<br>
+                    を組みました。<br><br>
+                    回答済みの質問&nbsp;…&nbsp;配列に保存<br>
+                    Backボタンが押された場合&nbsp;…&nbsp;回答済みの質問と答えを表示<br>
+                    Nextボタンが押された場合&nbsp;…&nbsp;新たに質問をランダムに選択<br><br>
                     上記コードでは、既存のアルゴリズム（最初に回答された内容によって次の質問が選択される）との相性が悪く、
-                    うまく動きません。
+                    うまく動きません。<br><br>
                     さらに、「直感で答えていく」というアプリの趣旨を考えるとBack、Nextボタン自体が不要ではないか？という結論に至り不採用に。
                     チーム間のコミュニケーション不足が招いた結果となりました。
                     このコードに関しては、反省の念を込めて<a class="branch-link" href="https://github.com/BPkuma/KonnaKanji/blob/memorial/js/main.js" target="_blank" rel="noopener noreferrer">「memorialブランチ」</a>として残しています。
@@ -579,13 +579,15 @@
                     <br>
                     <h5>DBを使ってセリフ表示</h5>
                     <p>
-                    テーブル名&nbsp;：Dialogues<br>
-                    orderカラム：セリフの順番を表す整数<br>
-                    talkカラム&nbsp;&nbsp;：セリフの内容<br>
-                    flagカラム&nbsp;&nbsp;：特定のセリフに目印<br>                    
-                    上記テーブルを作成し、クリックイベントでtalkカラムを順番に表示、
+                    以下テーブルを作成し、クリックイベントでtalkカラムを順番に表示、
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L249" target="_blank" rel="noopener noreferrer" class="code-link text">特定のflagが出現したら特定の動作を指定</a>
-                    する、という仕様にしました。                            
+                    する、という仕様にしました。     
+                    <br><br>                    
+    
+                    テーブル名&nbsp;：<span class="about-colmn">Dialogues</span><br>
+                    orderカラム：<span class="about-colmn">セリフの順番を表す整数</span><br>
+                    talkカラム&nbsp;&nbsp;：<span class="about-colmn">セリフの内容</span><br>
+                    flagカラム&nbsp;&nbsp;：<span class="about-colmn">特定のセリフに目印</span><br>                 
                     </p><br>
                     <h5>「はい」「いいえ」ボタン</h5>
                     <p>
@@ -602,11 +604,11 @@
                     余裕ができたら作ろう、くらいに考えていました。
                     しかし、今回のアプリに関してはやはりあった方が便利だと感じたため着手。
                     当初、flagによって簡単にコントロールできるかなと思いましたが、一筋縄ではいきませんでした。
-                    以下は特に手こずった点です。<br>
+                    以下は特に手こずった点です。<br><br>
                     ・画像表示用のsetInterval実行時に返るIDを使って停止処理をする際、「もどる」ボタンを押すと
                     何故かIDが複数に増える<br>
                     →
-                    <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L169" target="_blank" rel="noopener noreferrer" class="code-link text">配列として対応</a>
+                    <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L169" target="_blank" rel="noopener noreferrer" class="code-link text">配列として対応</a><br>
                     <br>
                     ・「はい」「いいえ」ボタンが表示されているときに「もどる」ボタンを押すと、「はい」「いいえ」ボタンが表示しっぱなして前のセリフに戻ってしまう<br>
                     →

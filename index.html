@@ -387,27 +387,27 @@
                     <a href="https://github.com/BPkuma/KonnaKanji/blob/main/%E3%81%93%E3%82%93%E3%81%AA%E6%BC%A2%E5%AD%97App.pdf" target="_blank" rel="noopener noreferrer" class="code-link text">設計書</a>
                     は、当時の自分には発想できないような内容でした。
                     ウェブサイトのようにクリックすると別のページに遷移する、というものではなく、1画面ですべて解決する仕様です。
-                    これはJavaScriptの出番だなと思いました。トップ画面から自動でメイン画面に切り替わる動きでは、
-                    <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L365" target="_blank" rel="noopener noreferrer" class="code-link text">イベントでhiddenを付け外し</a>
-                    する方法で思い通りに実現できました。
+                    これはJavaScriptの出番だなと思いました。トップ画面から自動でメイン画面に切り替わる動きについては、
+                    <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L374C3-L374C135" target="_blank" rel="noopener noreferrer" class="code-link text">setTimeout() メソッド</a>
+                    でhidden付け外しのタイミングをコントロールすることにより実装。
                     </p>
-                    <br><br>
+                    <br>
 
                     <h4><span class="marker-yellow"><i class="fa-regular fa-comment-dots"></i>&nbsp;ロジックについて</span></h4>
                     <p>
                     打合せの段階で、版画のように表示させる、という方針は決まっていたのですが、実際にどのようにコードを組んだらよいのか、
                     私にはイメージできていませんでした。
                     チームメートのコードを読み解くことで、なるほどと勉強になりました。
-                    まずは素材をオブジェクトとして配列に格納。そこからランダムに質問を表示、回答によって選択されたオブジェクト内の画像パスを
-                    所定の場所に書き加え、文字を表示させるというものです。
+                    まずは素材をオブジェクトとして配列に格納。そこからランダムに質問を表示、回答によって選択されたオブジェクト内の2つの画像パスを
+                    所定の場所に書き換えて合体させ、新しい漢字を表示させるというものです。
                     </p>
-                    <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L1" target="_blank" rel="noopener noreferrer" class="code-link">JavaScriptのコードを見る&nbsp;</a>
+                    <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L2" target="_blank" rel="noopener noreferrer" class="code-link">JavaScriptのコードを見る&nbsp;</a>
                     <br><br>
                     <h4><span class="marker-yellow"><i class="fa-regular fa-comment-dots"></i>&nbsp;スクショ機能について</span></h4>
                     <p>
                     <a href="https://github.com/BPkuma/KonnaKanji/blob/main/%E3%81%93%E3%82%93%E3%81%AA%E6%BC%A2%E5%AD%97App.pdf" target="_blank" rel="noopener noreferrer" class="code-link text">設計書</a>
-                    には、生成された漢字をダウンロードして保存できる、という機能が盛り込まれていました。
-                    今回採用しされたロジックで生成されることになる画像は、格納済みの異なる画像を2つ選択、組み合わせて表示させているため、
+                    には、生成した漢字をダウンロードして保存できる、という機能が盛り込まれていました。
+                    今回採用されたロジックで生成されることになる画像は、格納済みの異なる画像を2つ選択、組み合わせて表示させているため、
                     画面のスクリーンショットを撮ってダウンロード可能なhtml2camvasが使えそうだと思い、
                     <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L391" target="_blank" rel="noopener noreferrer" class="code-link text">実装</a>
                     に至りました。
@@ -420,10 +420,11 @@
                     には、Back、Nextボタンがあったため、以下のような
                     <a href="https://github.com/BPkuma/KonnaKanji/blob/memorial/js/main.js#L176" target="_blank" rel="noopener noreferrer" class="code-link text">コード</a>
                     を組みました。<br>
+                    回答済みの質問・・・配列に保存<br>
                     Backボタンが押された場合・・・回答済みの質問と答えを表示<br>
                     Nextボタンが押された場合・・・新たに質問をランダムに選択<br>
-                    一方、「質問と回答をランダムに表示する機能」から「最初の質問の回答によって2問目以降の質問の種類が限定される機能」へ
-                    改善されたことも重なり、上記コードではうまく動かないことが発覚。
+                    上記コードでは、既存のアルゴリズム（最初に回答された内容によって次の質問が選択される）との相性が悪く、
+                    うまく動きません。
                     さらに、「直感で答えていく」というアプリの趣旨を考えるとBack、Nextボタン自体が不要ではないか？という結論に至り不採用に。
                     チーム間のコミュニケーション不足が招いた結果となりました。
                     このコードに関しては、反省の念を込めて<a class="branch-link" href="https://github.com/BPkuma/KonnaKanji/blob/memorial/js/main.js" target="_blank" rel="noopener noreferrer">「memorialブランチ」</a>として残しています。
@@ -514,7 +515,7 @@
                     その際の環境はAWSでしたので、Dockerは未知の世界。
                     <br>トップページはチームメート共通で使用し、リンク先からはそれぞれ作りたいものを開発していこう、という方向になりました。
                     自由課題での反省を踏まえ、不完全なままだったサイトを完成させることを目標としました。
-                    まずは最低限の雛型を完成させること。のちのちはDBを使ってレベル制度導入などしたいと思っています。
+                    まずは最低限の雛型を完成させること。のちのちはDBを使ってレベルシステムの導入などしたいと思っています。
                     雛型はなんとか完成しましたが、デプロイのやり方などはまだ勉強できていないため、
                     デモ動画をご覧いただければ幸いです。
                 </p>
@@ -539,7 +540,7 @@
                     <h4><span class="marker-yellow"><i class="fa-regular fa-comment-dots"></i>&nbsp;DBについて</span></h4>
                     <p>
                     Laravel同様、授業ではいまいち理解できなかったため、この機会にいろいろな使い方にチャレンジしたい
-                    と思い、まずはキャラクターのセリフを格納。表示の際にカラムでコントロールできるようにしました。
+                    と思い、まずはキャラクターのセリフを格納するテーブルを作成。表示の際にカラムでコントロールできるようにしました。
                     授業で習ったのは、ユーザーが入力したデータを保存→検索したり並べ替えたりする、というフローのみ。
                     セリフをあらかじめ用意するパターンはどうするのが正解なのか不明ながら、
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/database/seeders/DialogueSeeder.php#L10" target="_blank" rel="noopener noreferrer" class="code-link text">Seederファイル</a>
@@ -553,7 +554,7 @@
                     以前までは、jsファイルを&lt;/body&gt;タグの直前に書いていたので問題ありませんでしたが、
                     今回は&lt;head&gt;タグ（
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/views/layouts/app.blade.php#L16" target="_blank" rel="noopener noreferrer" class="code-link text">layoutsディレクトリ内app.blade.phpファイル</a>
-                    ）に書いたせいか、エラーが頻発することに気づきました。
+                    ）に書いたせいか、コンソールエラーが頻発することに気づきました。
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L33" target="_blank" rel="noopener noreferrer" class="code-link text">要素が存在したら～というif文</a>
                     で対応する必要があることを知りました。<br>
                     また、チーム開発のことを考えると、テンプレートファイルにcssファイル、jsファイルを読み込ませた場合、名前衝突の危険もあることに
@@ -620,11 +621,11 @@
                     小さい画面用の
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/views/summarize/countdown.blade.php#L8" target="_blank" rel="noopener noreferrer" class="code-link text">「はい」「いいえ」ボタン</a>
                     を作成。
-                    また、コードの位置をセリフの下に表示させるようにしていましたが、見づらいと感じたため、
+                    また、解説用コードの位置をセリフの下に表示させるようにしていましたが、見づらいと感じたため、
                     右側に表示させるように変更。                        
                     </p><br>
                     <h4><span class="marker-yellow"><i class="fa-regular fa-lightbulb"></i>&nbsp;今後やりたいこと</span></h4>                   
-                    <h5>経験値、レベル制の導入</h5>
+                    <h5>経験値、レベルシステムの導入</h5>
                     <p>
                     テーブルを使ってユーザー情報を管理し、進行に応じて経験値、レベルが増える機能を実装したいです。
                     これが実現するころには、曖昧なテーブル、DBへの理解が深まるかなと考えています。
@@ -632,7 +633,7 @@
                     <h5>コンテンツ追加</h5>
                     <p>
                     「JavaScript学んだことまとめ」で中途半端になってしまったコンテンツの内容や、新たに学習した内容など、
-                    コンテンツを充実させ、レベル上げ甲斐のあるアプリにしていきたいです。
+                    コンテンツを充実させ、レベルシステムが活きるアプリにしていきたいです。
                     </p><br>
                     <h5>インターネット公開</h5>
                     <p>

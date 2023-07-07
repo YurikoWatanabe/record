@@ -531,7 +531,6 @@ td {
 .code-link {
     text-decoration: underline;
     color: rgb(47 127 141);
-    margin-right: 10%;
 }
 .code-link.text {
     margin-right: 0;
@@ -540,8 +539,6 @@ td {
     text-decoration: underline;
     color: rgb(47 127 141);
 }
-
-
 
 /**1000ｐｘ以下***************************/
 @media (max-width: 1000px) {
@@ -997,5 +994,9 @@ td {
     /*ハンバーガー*/
     nav.hamb {
         width: 60%;
+    }
+    /*考察*/
+    .about-colmn {
+        font-size: 15px;
     }
 }

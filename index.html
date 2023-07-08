@@ -400,15 +400,19 @@
                     <br><br>
                     
                     ・<a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L2" target="_blank" rel="noopener noreferrer" class="code-link">2つの配列</a>
-                    「firstQuestions」「secondQuestions」の中にオブジェクト「質問」「回答A・B」「素材の画像パスA・B」「formType（素材の配置位置を示す値）」を格納<br>
-                    ・<a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L299" target="_blank" rel="noopener noreferrer" class="code-link">最初の「質問A・B」と「回答A・B」</a>
-                    を「firstQuestions」からランダムに選択、表示させる<br>
-                    ・<a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L316" target="_blank" rel="noopener noreferrer" class="code-link">2問目以降の「質問A・B」と「回答A・B」</a>
-                    は、最初に選ばれたオブジェクトの「formType」と同じ、かつ「secondQuestions」からランダムに表示させる<br>
-                    ・ユーザーが選択した回答に紐づいた「素材の画像パス」を
+                    「firstQuestions」「secondQuestions」の中に、それぞれ以下のオブジェクトを格納。<br>
+                    「質問」「回答A・B」「素材の画像パスA・B」「formType（素材の配置位置を示す値）」<br><br>                  
+
+                    ・「firstQuestions」から
+                    <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L299" target="_blank" rel="noopener noreferrer" class="code-link">ランダムにオブジェクトを選択、</a>
+                    「質問」「回答A・B」を表示<br><br>
+                    ・最初に選ばれたオブジェクトが持つ「formType」と同じオブジェクトを
+                    <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L316" target="_blank" rel="noopener noreferrer" class="code-link">「secondQuestions」からランダムに選択、</a>
+                    「質問」「回答A・B」を表示<br><br>
+
+                    ・ユーザーが選択した方の回答に紐づいた「素材の画像パス」を
                     <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L334" target="_blank" rel="noopener noreferrer" class="code-link">配列「nswerArray」</a>
-                    
-                    に格納<br>
+                    に都度格納<br><br>
                     ・<a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L350" target="_blank" rel="noopener noreferrer" class="code-link">所定の位置に2つのパスを書きこむ</a>
                     ことで1つの新しい漢字を表示させる<br>
                     </p>

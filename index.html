@@ -270,9 +270,9 @@
                     <p>
                     極力シンプルに、かつ見やすく、を目指しました。一部長くなるコードのみ行数を表示させたい、
                     などの処理も、Prism.jsで簡単にできました。
-                    ただ、&lt;pre&gt;タグで囲んだコードを左寄せにする方法が分からず、力技で対応。
+                    ただ、&lt;pre&gt;タグで囲んだコードを左寄せにする方法が分からず、
                     <a href="https://github.com/YurikoWatanabe/git_test/blob/master/01_countdown/countdown.html#L245" target="_blank" rel="noopener noreferrer" class="code-link text">コード</a>
-                    を物理的に左寄せで記述。<br>
+                    を物理的に左寄せで記述して対応。<br>
                     ※後に別作品で再度使用する際に調べ直したところ、Prism.jsのデフォルトのスタイルシートであるprism.cssと同じセレクタ名を、
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/css/summarize.css#L97" target="_blank" rel="noopener noreferrer" class="code-link text">自作のCSSファイル</a>
                     内で指定、新しいスタイルを追加することで適用可能なことが分かりました。
@@ -375,8 +375,8 @@
                     </p><br>
                     <h4><span class="marker-yellow"><i class="fa-regular fa-comment-dots"></i>&nbsp;GitHubについて</span></h4>
                     <p>
-                    前作では、なんとかインターネット公開まではできたものの、基本的な使い方をほぼ理解できていなかったため、
-                    ここで本格的にコマンドを打ってはエラーの繰り返しと向き合うこととなりました。
+                    前作でなんとかインターネット公開まではできたものの、基本的な使い方は理解しきれず…
+                    コマンドを打ってはエラーの繰り返しと共に、ここで本格的に向き合うこととなりました。
                     サイトもどこに何が書いてあるのか分からず、慣れるまで苦労した記憶です。
                     間違えてmainブランチにいきなりpushしてしまわないだろうか？といった不安と闘いながら、
                     手順の確認をこまめに行い作業しました。
@@ -385,9 +385,9 @@
                     <p>
                     チームメートが作成した
                     <a href="https://github.com/BPkuma/KonnaKanji/blob/main/%E3%81%93%E3%82%93%E3%81%AA%E6%BC%A2%E5%AD%97App.pdf" target="_blank" rel="noopener noreferrer" class="code-link text">設計書</a>
-                    は、当時の自分には発想できないような内容でした。
-                    ウェブサイトのようにクリックすると別のページに遷移する、というものではなく、1画面ですべて解決する仕様です。
-                    これはJavaScriptの出番だなと思いました。トップ画面から自動でメイン画面に切り替わる動きについては、
+                    は、当時の自分には思いつかないような内容でした。
+                    独創的な発想はもちろん、1画面ですべて解決する仕様も新鮮。どうやって作るんだろう？と一瞬思いましたが、
+                    JavaScriptを使えば再現可能だなと思いました。トップ画面から自動でメイン画面に切り替わる動きについては、
                     <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L374C3-L374C135" target="_blank" rel="noopener noreferrer" class="code-link text">setTimeout() メソッド</a>
                     でhidden付け外しのタイミングをコントロールすることにより実装。
                     </p>
@@ -395,14 +395,24 @@
 
                     <h4><span class="marker-yellow"><i class="fa-regular fa-comment-dots"></i>&nbsp;ロジックについて</span></h4>
                     <p>
-                    打合せの段階で、版画のように表示させる、という方針は決まっていたのですが、実際にどのようにコードを組んだらよいのか、
-                    私にはイメージできていませんでした。
-                    チームメートのコードを読み解くことで、なるほどと勉強になりました。
-                    まずは素材をオブジェクトとして配列に格納。そこからランダムに質問を表示、回答によって選択されたオブジェクト内の2つの画像パスを
-                    所定の場所に書き換えて合体させ、新しい漢字を表示させるというものです。
-                    </p>
-                    <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L2" target="_blank" rel="noopener noreferrer" class="code-link">JavaScriptのコードを見る&nbsp;</a>
+                    打合せの段階で、漢字の素材である「辺」や「部首」などを版画のように配置させる、という方針は決まっていました。しかし、実際にどのようにコードを組んだらよいのか？
+                    私にはいまいちイメージできなかったのですが、のちにチームメートのコードを読み解くことで、なるほどと勉強になりました。以下はロジックの簡単な流れです。
                     <br><br>
+                    
+                    ・<a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L2" target="_blank" rel="noopener noreferrer" class="code-link">2つの配列</a>
+                    「firstQuestions」「secondQuestions」の中にオブジェクト「質問」「回答A・B」「素材の画像パスA・B」「formType（素材の配置位置を示す値）」を格納<br>
+                    ・<a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L299" target="_blank" rel="noopener noreferrer" class="code-link">最初の「質問A・B」と「回答A・B」</a>
+                    を「firstQuestions」からランダムに選択、表示させる<br>
+                    ・<a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L316" target="_blank" rel="noopener noreferrer" class="code-link">2問目以降の「質問A・B」と「回答A・B」</a>
+                    は、最初に選ばれたオブジェクトの「formType」と同じ、かつ「secondQuestions」からランダムに表示させる<br>
+                    ・ユーザーが選択した回答に紐づいた「素材の画像パス」を
+                    <a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L334" target="_blank" rel="noopener noreferrer" class="code-link">配列「nswerArray」</a>
+                    
+                    に格納<br>
+                    ・<a href="https://github.com/BPkuma/KonnaKanji/blob/main/js/main.js#L350" target="_blank" rel="noopener noreferrer" class="code-link">所定の位置に2つのパスを書きこむ</a>
+                    ことで1つの新しい漢字を表示させる<br>
+                    </p>
+                    <br>
                     <h4><span class="marker-yellow"><i class="fa-regular fa-comment-dots"></i>&nbsp;スクショ機能について</span></h4>
                     <p>
                     <a href="https://github.com/BPkuma/KonnaKanji/blob/main/%E3%81%93%E3%82%93%E3%81%AA%E6%BC%A2%E5%AD%97App.pdf" target="_blank" rel="noopener noreferrer" class="code-link text">設計書</a>
@@ -423,10 +433,10 @@
                     回答済みの質問&nbsp;…&nbsp;配列に保存<br>
                     Backボタンが押された場合&nbsp;…&nbsp;回答済みの質問と答えを表示<br>
                     Nextボタンが押された場合&nbsp;…&nbsp;新たに質問をランダムに選択<br><br>
-                    上記コードでは、既存のアルゴリズム（最初に回答された内容によって次の質問が選択される）との相性が悪く、
-                    うまく動きません。<br><br>
+                    上記コードでは、既存のアルゴリズム（最初に表示された質問、回答によって次の質問が選択される）の詳細まで
+                    考慮しきれておらず、うまく動きません。
                     さらに、「直感で答えていく」というアプリの趣旨を考えるとBack、Nextボタン自体が不要ではないか？という結論に至り不採用に。
-                    チーム間のコミュニケーション不足が招いた結果となりました。
+                    私の認識不足、チーム間のコミュニケーション不足が招いた結果となりました。
                     このコードに関しては、反省の念を込めて<a class="branch-link" href="https://github.com/BPkuma/KonnaKanji/blob/memorial/js/main.js" target="_blank" rel="noopener noreferrer">「memorialブランチ」</a>として残しています。
                     </p>
             </div>
@@ -557,14 +567,14 @@
                     ）に書いたせいか、コンソールエラーが頻発することに気づきました。
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L33" target="_blank" rel="noopener noreferrer" class="code-link text">要素が存在したら～というif文</a>
                     で対応する必要があることを知りました。<br>
-                    また、チーム開発のことを考えると、テンプレートファイルにcssファイル、jsファイルを読み込ませた場合、名前衝突の危険もあることに
-                    最近気づきました。
+                    また、チーム開発においては特に気を付けるべき点として、テンプレートファイルにcssファイルやjsファイルを読み込ませることにより、
+                    名前衝突の可能性があることに最近気づきました。
                     この点に関しては、厳格な命名規則か、ファイルを分けるなどの対策が必要だと話し合っていたところです。
                     </p><br>
                     <h4><span class="marker-yellow"><i class="fa-regular fa-lightbulb"></i>&nbsp;やってみたかったこと</span></h4>                   
                     <h5>ドラクエっぽい世界観</h5>
                     <p>
-                    黒の背景に白の文字列、それを囲む白い枠線と、ベースはとても簡単にできました。
+                    黒の背景に白の文字列、それらを囲む白い枠線と、ベースはとても簡単にできました。
                     メイン画面はクリックでどんどんセリフが変わっていくので、ページ遷移はありません。
                     そのため、枠線やキャラクターの配置を決めるのに苦労しました。
                     </p>
@@ -579,7 +589,7 @@
                     <br>
                     <h5>DBを使ってセリフ表示</h5>
                     <p>
-                    以下テーブルを作成し、クリックイベントでtalkカラムを順番に表示、
+                    以下テーブルを作成し、クリックイベントでtalkカラムをorder順に表示、
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L249" target="_blank" rel="noopener noreferrer" class="code-link text">特定のflagが出現したら特定の動作を指定</a>
                     する、という仕様にしました。     
                     <br><br>                    

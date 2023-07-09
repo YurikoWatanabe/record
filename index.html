@@ -541,7 +541,7 @@
                     <h4><span class="marker-yellow"><i class="fa-regular fa-comment-dots"></i>&nbsp;Laravel10について</span></h4>
                     <p>
                     授業（AWS環境のLaravel6）ではあまり理解できていなかったため、基本を再度確認しながらのスタートとなりました。
-                    Controllerとviewの簡単な関係の確認からはじめ、6では登場しなかったTailwindの使い方、
+                    Controllerとviewの簡単な関係の確認からはじめ、Tailwindの使い方、
                     CSSファイル、jsファイルの格納場所、それらを読み込ませる場所など、
                     やりたいことに応じて必要なものを調べていく過程でようやく理解の入り口に立てた気がします。
                     </p><br>
@@ -569,8 +569,9 @@
                     今回は&lt;head&gt;タグ（
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/views/layouts/app.blade.php#L16" target="_blank" rel="noopener noreferrer" class="code-link text">layoutsディレクトリ内app.blade.phpファイル</a>
                     ）に書いたせいか、コンソールエラーが頻発することに気づきました。
+                    エラー対策として、
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L33" target="_blank" rel="noopener noreferrer" class="code-link text">要素が存在したら～というif文</a>
-                    で対応する必要があることを知りました。<br>
+                    を追加。<br>
                     また、チーム開発においては特に気を付けるべき点として、テンプレートファイルにcssファイルやjsファイルを読み込ませることにより、
                     名前衝突の可能性があることに最近気づきました。
                     この点に関しては、厳格な命名規則か、ファイルを分けるなどの対策が必要だと話し合っていたところです。
@@ -588,7 +589,7 @@
                     セリフが表示される枠線の上にキャラクターを表示させ、よりゲームっぽい世界観にできたと思います。
                     豊富なキャラクター素材のおかげで、setIntervalメソッドを使って
                     <a href="https://github.com/BPkuma/myportfolio/blob/main/resources/js/summarize.js#L165" target="_blank" rel="noopener noreferrer" class="code-link text">アニメーション風</a>
-                    に表示することもできました。素材はクラスメートから提供していただきました。                            
+                    に表示することもできました。素材はクラスメートから提供していただいたもの。                            
                     </p>
                     <br>
                     <h5>DBを使ってセリフ表示</h5>
